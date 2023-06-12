@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/jalil/CLionProjects/Core/build",
+  "command": "/usr/bin/gcc -DCore_EXPORTS  -g -fPIC -std=gnu11 -o CMakeFiles/Core.dir/src/main.c.o -c /home/jalil/CLionProjects/Core/src/main.c",
+  "file": "/home/jalil/CLionProjects/Core/src/main.c"
+},
+{
+  "directory": "/home/jalil/CLionProjects/Core/build",
+  "command": "/usr/bin/gcc -DCore_EXPORTS  -g -fPIC -std=gnu11 -o CMakeFiles/Core.dir/src/file_management.c.o -c /home/jalil/CLionProjects/Core/src/file_management.c",
+  "file": "/home/jalil/CLionProjects/Core/src/file_management.c"
+},
+{
+  "directory": "/home/jalil/CLionProjects/Core/build",
+  "command": "/usr/bin/gcc   -g -std=gnu11 -o CMakeFiles/LibCore.dir/src/main.c.o -c /home/jalil/CLionProjects/Core/src/main.c",
+  "file": "/home/jalil/CLionProjects/Core/src/main.c"
+},
+{
+  "directory": "/home/jalil/CLionProjects/Core/build",
+  "command": "/usr/bin/gcc   -g -std=gnu11 -o CMakeFiles/LibCore.dir/src/file_management.c.o -c /home/jalil/CLionProjects/Core/src/file_management.c",
+  "file": "/home/jalil/CLionProjects/Core/src/file_management.c"
+}
+]

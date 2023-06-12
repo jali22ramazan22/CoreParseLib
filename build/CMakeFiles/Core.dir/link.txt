@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC -g -shared -Wl,-soname,libCore.so -o libCore.so CMakeFiles/Core.dir/src/main.c.o CMakeFiles/Core.dir/src/file_management.c.o 

@@ -1,0 +1,4 @@
+/home/jalil/CLionProjects/Core/build/CMakeFiles/Core.dir
+/home/jalil/CLionProjects/Core/build/CMakeFiles/LibCore.dir
+/home/jalil/CLionProjects/Core/build/CMakeFiles/edit_cache.dir
+/home/jalil/CLionProjects/Core/build/CMakeFiles/rebuild_cache.dir
