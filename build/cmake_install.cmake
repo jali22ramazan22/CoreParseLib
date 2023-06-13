@@ -1,4 +1,4 @@
-# Install script for directory: /home/jalil/CLionProjects/CoreParseLib
+# Install script for directory: /home/jalil/Desktop/Never_list_MAIN/CoreParseLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jalil/CLionProjects/CoreParseLib/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

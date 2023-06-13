@@ -19,15 +19,16 @@ bool exist_check(char* filename) {
 }
 //creating file procedure
 void create_file(char* filename) {
-    if (exist_check(filename)){
-        printf("Error: THE FILE ALREADY EXISTS");
-        return;
-    }
     FILE* fp = file_connection(filename, "w");
     fclose(fp);
 }
 
-void data_creation_procedure(){
-    
+void data_creation_procedure(char* filename){
+    if (exist_check(filename)){
+        printf("Error: THE FILE ALREADY EXISTS");
+    }
+    else{
+        create_file(filename);
+    }
 }
 
