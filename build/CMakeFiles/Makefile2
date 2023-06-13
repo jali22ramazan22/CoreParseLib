@@ -81,12 +81,12 @@ clean: CMakeFiles/CORE_PARSE_LIB.dir/clean
 CMakeFiles/CORE_PARSE_LIB.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/build/CMakeFiles --progress-num=1,2 "Built target CORE_PARSE_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/build/CMakeFiles --progress-num=1,2,3 "Built target CORE_PARSE_LIB"
 .PHONY : CMakeFiles/CORE_PARSE_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CORE_PARSE_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CORE_PARSE_LIB.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/build/CMakeFiles 0
 .PHONY : CMakeFiles/CORE_PARSE_LIB.dir/rule

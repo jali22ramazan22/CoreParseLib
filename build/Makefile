@@ -153,6 +153,30 @@ src/file_management.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/file_management.c.s
 .PHONY : src/file_management.c.s
 
+src/string_utils.o: src/string_utils.c.o
+.PHONY : src/string_utils.o
+
+# target to build an object file
+src/string_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/string_utils.c.o
+.PHONY : src/string_utils.c.o
+
+src/string_utils.i: src/string_utils.c.i
+.PHONY : src/string_utils.i
+
+# target to preprocess a source file
+src/string_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/string_utils.c.i
+.PHONY : src/string_utils.c.i
+
+src/string_utils.s: src/string_utils.c.s
+.PHONY : src/string_utils.s
+
+# target to generate assembly for a file
+src/string_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/string_utils.c.s
+.PHONY : src/string_utils.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... src/file_management.o"
 	@echo "... src/file_management.i"
 	@echo "... src/file_management.s"
+	@echo "... src/string_utils.o"
+	@echo "... src/string_utils.i"
+	@echo "... src/string_utils.s"
 .PHONY : help
 
 

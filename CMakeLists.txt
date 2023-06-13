@@ -10,7 +10,7 @@ add_library(CORE_PARSE_LIB STATIC
     src/common.h
     src/file_management.h
     src/file_management.c
-    src/core_string.h
-    src/core_string.c
+    src/string_utils.h
+    src/string_utils.c
 )
 
