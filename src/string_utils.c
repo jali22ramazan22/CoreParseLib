@@ -1,4 +1,4 @@
-#include "core_string.h"
+#include "string_utils.h"
 //Function for copying str1 into str2.
 //Also takes a parameter of str1 size.
 void copy(char* str1, char* str2, int size){
@@ -53,4 +53,11 @@ void S_concatenate_str(char* str1, char* str2){
    }
    str2[common] = '\0';
 
+}
+
+
+int get_len(char* str){
+   int i = 0;
+   for(; str[i] != '\0'; ++i);
+   return i;
 }
