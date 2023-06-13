@@ -3,14 +3,18 @@ project(CORE_PARSE_LIB C)
 
 set(CMAKE_C_STANDARD 11)
 
-include_directories(lib/json-c-build)
-
+add_subdirectory(lib/json-c)
+set(
+        coreparselib.h
+        src/file_management.h
+        src/dir_management.h
+        src/string_utils.h
+        src/common.h
+)
 add_library(CORE_PARSE_LIB STATIC
-    coreparselib.h
-    src/common.h
-    src/file_management.h
     src/file_management.c
-    src/string_utils.h
+    src/dir_management.c
     src/string_utils.c
 )
+target_link_libraries(CORE_PARSE_LIB PRIVATE json-c)
 

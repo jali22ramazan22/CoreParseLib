@@ -3,7 +3,7 @@
 #include "common.h"
 #include "string_utils.h"
 typedef struct {
-    char* dirpath;
+    char dirpath[BUFFER];
     DIR* dp;
     
 }directory_struct;

@@ -3,7 +3,7 @@
 #include "src/file_management.h"
 #include "src/common.h"
 #include "src/string_utils.h"
-#include "src/dir_managment.h"
+#include "src/dir_management.h"
 //--------------------------FILE-MANAGMENT MODULE------------------------------------
 
 //---------Auxillary functions/procedures of file_managment module---------------

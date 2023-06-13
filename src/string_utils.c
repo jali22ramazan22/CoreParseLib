@@ -1,13 +1,14 @@
 #include "string_utils.h"
 //Function for copying str1 into str2.
 //Also takes a parameter of str1 size.
-void copy(char* str1, char* str2, int size){
-   int i;
-   for(i = 0; i < size; ++i){
-      str2[i] = str1[i];
-   }
-   str2[size] = '\0';
+void copy(char* str1, char* str2, int size) {
+    int i;
+    for (i = 0; i < size; ++i) {
+        str2[i] = str1[i];
+    }
+    str2[i] = '\0';
 }
+
 
 //another method for combining root and file_name into one string through dynamic allocation of memory
 //saves into new string, pointer of it returns this function 
