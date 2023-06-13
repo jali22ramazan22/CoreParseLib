@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jalil/CLionProjects/Core/src/file_management.c" "CMakeFiles/LibCore.dir/src/file_management.c.o" "gcc" "CMakeFiles/LibCore.dir/src/file_management.c.o.d"
-  "/home/jalil/CLionProjects/Core/src/main.c" "CMakeFiles/LibCore.dir/src/main.c.o" "gcc" "CMakeFiles/LibCore.dir/src/main.c.o.d"
+  "/home/jalil/CLionProjects/CoreParseLib/src/file_management.c" "CMakeFiles/LibCore.dir/src/file_management.c.o" "gcc" "CMakeFiles/LibCore.dir/src/file_management.c.o.d"
+  "/home/jalil/CLionProjects/CoreParseLib/src/main.c" "CMakeFiles/LibCore.dir/src/main.c.o" "gcc" "CMakeFiles/LibCore.dir/src/main.c.o.d"
   )
 
 # Targets to which this target links.

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jalil/CLionProjects/Core
+CMAKE_SOURCE_DIR = /home/jalil/CLionProjects/CoreParseLib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jalil/CLionProjects/Core/build
+CMAKE_BINARY_DIR = /home/jalil/CLionProjects/CoreParseLib/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Core.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/Core.dir/flags.make
 CMakeFiles/Core.dir/src/main.c.o: CMakeFiles/Core.dir/flags.make
 CMakeFiles/Core.dir/src/main.c.o: ../src/main.c
 CMakeFiles/Core.dir/src/main.c.o: CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/CLionProjects/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Core.dir/src/main.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Core.dir/src/main.c.o -MF CMakeFiles/Core.dir/src/main.c.o.d -o CMakeFiles/Core.dir/src/main.c.o -c /home/jalil/CLionProjects/Core/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Core.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Core.dir/src/main.c.o -MF CMakeFiles/Core.dir/src/main.c.o.d -o CMakeFiles/Core.dir/src/main.c.o -c /home/jalil/CLionProjects/CoreParseLib/src/main.c
 
 CMakeFiles/Core.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core.dir/src/main.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/CLionProjects/Core/src/main.c > CMakeFiles/Core.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/CLionProjects/CoreParseLib/src/main.c > CMakeFiles/Core.dir/src/main.c.i
 
 CMakeFiles/Core.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core.dir/src/main.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/CLionProjects/Core/src/main.c -o CMakeFiles/Core.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/CLionProjects/CoreParseLib/src/main.c -o CMakeFiles/Core.dir/src/main.c.s
 
 CMakeFiles/Core.dir/src/file_management.c.o: CMakeFiles/Core.dir/flags.make
 CMakeFiles/Core.dir/src/file_management.c.o: ../src/file_management.c
 CMakeFiles/Core.dir/src/file_management.c.o: CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/CLionProjects/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Core.dir/src/file_management.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Core.dir/src/file_management.c.o -MF CMakeFiles/Core.dir/src/file_management.c.o.d -o CMakeFiles/Core.dir/src/file_management.c.o -c /home/jalil/CLionProjects/Core/src/file_management.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Core.dir/src/file_management.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Core.dir/src/file_management.c.o -MF CMakeFiles/Core.dir/src/file_management.c.o.d -o CMakeFiles/Core.dir/src/file_management.c.o -c /home/jalil/CLionProjects/CoreParseLib/src/file_management.c
 
 CMakeFiles/Core.dir/src/file_management.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Core.dir/src/file_management.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/CLionProjects/Core/src/file_management.c > CMakeFiles/Core.dir/src/file_management.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/CLionProjects/CoreParseLib/src/file_management.c > CMakeFiles/Core.dir/src/file_management.c.i
 
 CMakeFiles/Core.dir/src/file_management.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Core.dir/src/file_management.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/CLionProjects/Core/src/file_management.c -o CMakeFiles/Core.dir/src/file_management.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/CLionProjects/CoreParseLib/src/file_management.c -o CMakeFiles/Core.dir/src/file_management.c.s
 
 # Object files for target Core
 Core_OBJECTS = \
@@ -109,7 +109,7 @@ libCore.so: CMakeFiles/Core.dir/src/main.c.o
 libCore.so: CMakeFiles/Core.dir/src/file_management.c.o
 libCore.so: CMakeFiles/Core.dir/build.make
 libCore.so: CMakeFiles/Core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jalil/CLionProjects/Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libCore.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libCore.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/Core.dir/clean:
 .PHONY : CMakeFiles/Core.dir/clean
 
 CMakeFiles/Core.dir/depend:
-	cd /home/jalil/CLionProjects/Core/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jalil/CLionProjects/Core /home/jalil/CLionProjects/Core /home/jalil/CLionProjects/Core/build /home/jalil/CLionProjects/Core/build /home/jalil/CLionProjects/Core/build/CMakeFiles/Core.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jalil/CLionProjects/CoreParseLib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jalil/CLionProjects/CoreParseLib /home/jalil/CLionProjects/CoreParseLib /home/jalil/CLionProjects/CoreParseLib/build /home/jalil/CLionProjects/CoreParseLib/build /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/Core.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Core.dir/depend
 

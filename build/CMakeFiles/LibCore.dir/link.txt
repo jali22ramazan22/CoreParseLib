@@ -1,1 +1,1 @@
-/usr/bin/gcc -g CMakeFiles/LibCore.dir/src/main.c.o CMakeFiles/LibCore.dir/src/file_management.c.o -o LibCore 
+/usr/bin/cc CMakeFiles/LibCore.dir/src/main.c.o CMakeFiles/LibCore.dir/src/file_management.c.o -o LibCore 

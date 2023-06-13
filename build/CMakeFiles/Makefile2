@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jalil/CLionProjects/Core
+CMAKE_SOURCE_DIR = /home/jalil/CLionProjects/CoreParseLib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jalil/CLionProjects/Core/build
+CMAKE_BINARY_DIR = /home/jalil/CLionProjects/CoreParseLib/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -83,14 +83,14 @@ clean: CMakeFiles/LibCore.dir/clean
 CMakeFiles/Core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/CLionProjects/Core/build/CMakeFiles --progress-num=1,2,3 "Built target Core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles --progress-num=1,2,3 "Built target Core"
 .PHONY : CMakeFiles/Core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/Core/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/Core/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles 0
 .PHONY : CMakeFiles/Core.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/Core.dir/clean:
 CMakeFiles/LibCore.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/CLionProjects/Core/build/CMakeFiles --progress-num=4,5,6 "Built target LibCore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles --progress-num=4,5,6 "Built target LibCore"
 .PHONY : CMakeFiles/LibCore.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LibCore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/Core/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LibCore.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/Core/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles 0
 .PHONY : CMakeFiles/LibCore.dir/rule
 
 # Convenience name for target.
