@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LibCore.dir/src/core_string.c.o"
+  "CMakeFiles/LibCore.dir/src/core_string.c.o.d"
   "CMakeFiles/LibCore.dir/src/file_management.c.o"
   "CMakeFiles/LibCore.dir/src/file_management.c.o.d"
   "CMakeFiles/LibCore.dir/src/main.c.o"

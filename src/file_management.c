@@ -1,43 +1,33 @@
 #include "file_management.h"
 
-
-FILE* pointer_connection(char* file_name, char* mode){
-    FILE *fp; 
-    if((fp = fopen(file_name, mode)) == NULL){
-        printf("Error: cannot open the file");
-        return NULL;
-    }
+//Auxillary function for creating the connection to file
+//returns a pointer for following functions
+FILE* file_connection(char* filename, const char* mode){
+    S_concatenate_str(root_const, filename);
+    FILE* fp = fopen(filename, mode);
     return fp;
 }
-
-void check_file(char* file_name){
-    char* file_root = D_concatenate_str(root_const, file_name);
-    FILE* fp = pointer_connection(file_root, "r");
-    if(fp == NULL)
-        return;
-    fclose(fp);
-}
-
-void add_file(char* file_name){
-    
-    char* file_root = D_concatenate_str(root_const, file_name);
-    FILE *fp = pointer_connection(file_root, "a");
-    if(fp == NULL)
-        return;
-    fclose(fp);
-}
-
-void read_file(char* file_name){
-    char* file_root = D_concatenate_str(root_const, file_name);
-    FILE *fp = pointer_connection(file_root, "r");
+//check the existance of file
+//uses the function "file_connection"
+bool exist_check(char* filename) {
+    FILE* fp = file_connection(filename, "r");
     if (fp == NULL) {
+        return false;
+    }
+    fclose(fp);
+    return true;
+}
+//creating file procedure
+void create_file(char* filename) {
+    if (exist_check(filename)){
+        printf("Error: THE FILE ALREADY EXISTS");
         return;
     }
-    
-    char _display_buffer_[BUFFER];
-    while (fgets(_display_buffer_, BUFFER, fp) != NULL) {
-        printf("%s", _display_buffer_);
-    }
-    
+    FILE* fp = file_connection(filename, "w");
     fclose(fp);
 }
+
+void data_creation_procedure(){
+    
+}
+

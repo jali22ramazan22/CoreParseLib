@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build
 
 C_FLAGS = -std=gnu11
 

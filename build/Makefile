@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Core
+# Target rules for targets named CORE_PARSE_LIB
 
 # Build rule for target.
-Core: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core
-.PHONY : Core
+CORE_PARSE_LIB: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CORE_PARSE_LIB
+.PHONY : CORE_PARSE_LIB
 
 # fast build rule for target.
-Core/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/build
-.PHONY : Core/fast
+CORE_PARSE_LIB/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/build
+.PHONY : CORE_PARSE_LIB/fast
 
 #=============================================================================
 # Target rules for targets named LibCore
@@ -142,12 +142,36 @@ LibCore/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/build
 .PHONY : LibCore/fast
 
+src/core_string.o: src/core_string.c.o
+.PHONY : src/core_string.o
+
+# target to build an object file
+src/core_string.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/src/core_string.c.o
+.PHONY : src/core_string.c.o
+
+src/core_string.i: src/core_string.c.i
+.PHONY : src/core_string.i
+
+# target to preprocess a source file
+src/core_string.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/src/core_string.c.i
+.PHONY : src/core_string.c.i
+
+src/core_string.s: src/core_string.c.s
+.PHONY : src/core_string.s
+
+# target to generate assembly for a file
+src/core_string.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/src/core_string.c.s
+.PHONY : src/core_string.c.s
+
 src/file_management.o: src/file_management.c.o
 .PHONY : src/file_management.o
 
 # target to build an object file
 src/file_management.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/src/file_management.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/file_management.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/src/file_management.c.o
 .PHONY : src/file_management.c.o
 
@@ -156,7 +180,7 @@ src/file_management.i: src/file_management.c.i
 
 # target to preprocess a source file
 src/file_management.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/src/file_management.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/file_management.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/src/file_management.c.i
 .PHONY : src/file_management.c.i
 
@@ -165,7 +189,7 @@ src/file_management.s: src/file_management.c.s
 
 # target to generate assembly for a file
 src/file_management.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/src/file_management.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/file_management.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/src/file_management.c.s
 .PHONY : src/file_management.c.s
 
@@ -174,7 +198,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/main.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/src/main.c.o
 .PHONY : src/main.c.o
 
@@ -183,7 +207,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/main.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/src/main.c.i
 .PHONY : src/main.c.i
 
@@ -192,7 +216,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/src/main.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/src/main.c.s
 .PHONY : src/main.c.s
 
@@ -204,8 +228,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Core"
+	@echo "... CORE_PARSE_LIB"
 	@echo "... LibCore"
+	@echo "... src/core_string.o"
+	@echo "... src/core_string.i"
+	@echo "... src/core_string.s"
 	@echo "... src/file_management.o"
 	@echo "... src/file_management.i"
 	@echo "... src/file_management.s"

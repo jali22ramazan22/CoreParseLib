@@ -5,4 +5,6 @@
 #define BUFFER 1024
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#include <dirent.h>
 #endif //CORE_PARSE_LIB_COMMON_H

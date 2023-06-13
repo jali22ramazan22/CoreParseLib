@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/jalil/CLionProjects/CoreParseLib/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Core.dir/all
+all: CMakeFiles/CORE_PARSE_LIB.dir/all
 all: CMakeFiles/LibCore.dir/all
 .PHONY : all
 
@@ -72,49 +72,49 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Core.dir/clean
+clean: CMakeFiles/CORE_PARSE_LIB.dir/clean
 clean: CMakeFiles/LibCore.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Core.dir
+# Target rules for target CMakeFiles/CORE_PARSE_LIB.dir
 
 # All Build rule for target.
-CMakeFiles/Core.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles --progress-num=1,2,3 "Built target Core"
-.PHONY : CMakeFiles/Core.dir/all
+CMakeFiles/CORE_PARSE_LIB.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles --progress-num=1,2,3 "Built target CORE_PARSE_LIB"
+.PHONY : CMakeFiles/CORE_PARSE_LIB.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Core.dir/rule: cmake_check_build_system
+CMakeFiles/CORE_PARSE_LIB.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Core.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CORE_PARSE_LIB.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles 0
-.PHONY : CMakeFiles/Core.dir/rule
+.PHONY : CMakeFiles/CORE_PARSE_LIB.dir/rule
 
 # Convenience name for target.
-Core: CMakeFiles/Core.dir/rule
-.PHONY : Core
+CORE_PARSE_LIB: CMakeFiles/CORE_PARSE_LIB.dir/rule
+.PHONY : CORE_PARSE_LIB
 
 # clean rule for target.
-CMakeFiles/Core.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Core.dir/build.make CMakeFiles/Core.dir/clean
-.PHONY : CMakeFiles/Core.dir/clean
+CMakeFiles/CORE_PARSE_LIB.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CORE_PARSE_LIB.dir/build.make CMakeFiles/CORE_PARSE_LIB.dir/clean
+.PHONY : CMakeFiles/CORE_PARSE_LIB.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/LibCore.dir
 
 # All Build rule for target.
-CMakeFiles/LibCore.dir/all:
+CMakeFiles/LibCore.dir/all: CMakeFiles/CORE_PARSE_LIB.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibCore.dir/build.make CMakeFiles/LibCore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles --progress-num=4,5,6 "Built target LibCore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles --progress-num=4,5,6,7 "Built target LibCore"
 .PHONY : CMakeFiles/LibCore.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LibCore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LibCore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles 0
 .PHONY : CMakeFiles/LibCore.dir/rule
