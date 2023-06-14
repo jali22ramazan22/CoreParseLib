@@ -1,7 +1,7 @@
 CMakeFiles/json-c-static.dir/printbuf.c.o: \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/printbuf.c \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/printbuf.c \
  /usr/include/stdc-predef.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/config.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/config.h \
  /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -68,10 +68,10 @@ CMakeFiles/json-c-static.dir/printbuf.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/strings.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/debug.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/printbuf.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/snprintf_compat.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/vasprintf_compat.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/debug.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/printbuf.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/snprintf_compat.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/vasprintf_compat.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h

@@ -1,4 +1,4 @@
-#include "string_utils.h"
+#include "../string_utils_module/string_utils.h"
 
 FILE* file_connection(char* filename, const char* mode){
     S_concatenate_str(root_const, filename);

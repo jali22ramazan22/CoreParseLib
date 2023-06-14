@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/LibCore.dir/src/file_management.c.o CMakeFiles/LibCore.dir/src/core_string.c.o -o LibCore  libCORE_PARSE_LIB.a 

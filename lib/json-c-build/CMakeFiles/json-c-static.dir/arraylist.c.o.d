@@ -1,7 +1,7 @@
 CMakeFiles/json-c-static.dir/arraylist.c.o: \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/arraylist.c \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/arraylist.c \
  /usr/include/stdc-predef.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/config.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/config.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h \
@@ -54,4 +54,4 @@ CMakeFiles/json-c-static.dir/arraylist.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/strings.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/arraylist.h
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/arraylist.h

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jalil/CLionProjects/CoreParseLib/lib/json-c
+CMAKE_SOURCE_DIR = /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build
+CMAKE_BINARY_DIR = /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/test1Formatted.dir/depend.make
@@ -70,32 +70,32 @@ include tests/CMakeFiles/test1Formatted.dir/progress.make
 include tests/CMakeFiles/test1Formatted.dir/flags.make
 
 tests/CMakeFiles/test1Formatted.dir/test1.c.o: tests/CMakeFiles/test1Formatted.dir/flags.make
-tests/CMakeFiles/test1Formatted.dir/test1.c.o: /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/test1.c
+tests/CMakeFiles/test1Formatted.dir/test1.c.o: /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/test1.c
 tests/CMakeFiles/test1Formatted.dir/test1.c.o: tests/CMakeFiles/test1Formatted.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test1Formatted.dir/test1.c.o"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/test1Formatted.dir/test1.c.o -MF CMakeFiles/test1Formatted.dir/test1.c.o.d -o CMakeFiles/test1Formatted.dir/test1.c.o -c /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/test1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test1Formatted.dir/test1.c.o"
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/test1Formatted.dir/test1.c.o -MF CMakeFiles/test1Formatted.dir/test1.c.o.d -o CMakeFiles/test1Formatted.dir/test1.c.o -c /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/test1.c
 
 tests/CMakeFiles/test1Formatted.dir/test1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test1Formatted.dir/test1.c.i"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/test1.c > CMakeFiles/test1Formatted.dir/test1.c.i
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/test1.c > CMakeFiles/test1Formatted.dir/test1.c.i
 
 tests/CMakeFiles/test1Formatted.dir/test1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test1Formatted.dir/test1.c.s"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/test1.c -o CMakeFiles/test1Formatted.dir/test1.c.s
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/test1.c -o CMakeFiles/test1Formatted.dir/test1.c.s
 
 tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o: tests/CMakeFiles/test1Formatted.dir/flags.make
-tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o: /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/parse_flags.c
+tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o: /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/parse_flags.c
 tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o: tests/CMakeFiles/test1Formatted.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o -MF CMakeFiles/test1Formatted.dir/parse_flags.c.o.d -o CMakeFiles/test1Formatted.dir/parse_flags.c.o -c /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/parse_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o"
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o -MF CMakeFiles/test1Formatted.dir/parse_flags.c.o.d -o CMakeFiles/test1Formatted.dir/parse_flags.c.o -c /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/parse_flags.c
 
 tests/CMakeFiles/test1Formatted.dir/parse_flags.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test1Formatted.dir/parse_flags.c.i"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/parse_flags.c > CMakeFiles/test1Formatted.dir/parse_flags.c.i
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/parse_flags.c > CMakeFiles/test1Formatted.dir/parse_flags.c.i
 
 tests/CMakeFiles/test1Formatted.dir/parse_flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test1Formatted.dir/parse_flags.c.s"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/parse_flags.c -o CMakeFiles/test1Formatted.dir/parse_flags.c.s
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/parse_flags.c -o CMakeFiles/test1Formatted.dir/parse_flags.c.s
 
 # Object files for target test1Formatted
 test1Formatted_OBJECTS = \
@@ -110,18 +110,18 @@ tests/test1Formatted: tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o
 tests/test1Formatted: tests/CMakeFiles/test1Formatted.dir/build.make
 tests/test1Formatted: libjson-c.so.5.2.0
 tests/test1Formatted: tests/CMakeFiles/test1Formatted.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test1Formatted"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test1Formatted.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test1Formatted"
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test1Formatted.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/test1Formatted.dir/build: tests/test1Formatted
 .PHONY : tests/CMakeFiles/test1Formatted.dir/build
 
 tests/CMakeFiles/test1Formatted.dir/clean:
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/test1Formatted.dir/cmake_clean.cmake
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/test1Formatted.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/test1Formatted.dir/clean
 
 tests/CMakeFiles/test1Formatted.dir/depend:
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jalil/CLionProjects/CoreParseLib/lib/json-c /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests/CMakeFiles/test1Formatted.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests/CMakeFiles/test1Formatted.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/test1Formatted.dir/depend
 

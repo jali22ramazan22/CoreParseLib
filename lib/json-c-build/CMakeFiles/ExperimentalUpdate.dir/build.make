@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jalil/CLionProjects/CoreParseLib/lib/json-c
+CMAKE_SOURCE_DIR = /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build
+CMAKE_BINARY_DIR = /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build
 
 # Utility rule file for ExperimentalUpdate.
 
@@ -82,6 +82,6 @@ CMakeFiles/ExperimentalUpdate.dir/clean:
 .PHONY : CMakeFiles/ExperimentalUpdate.dir/clean
 
 CMakeFiles/ExperimentalUpdate.dir/depend:
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jalil/CLionProjects/CoreParseLib/lib/json-c /home/jalil/CLionProjects/CoreParseLib/lib/json-c /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles/ExperimentalUpdate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles/ExperimentalUpdate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalUpdate.dir/depend
 

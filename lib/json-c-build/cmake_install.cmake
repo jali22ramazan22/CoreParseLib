@@ -1,4 +1,4 @@
-# Install script for directory: /home/jalil/CLionProjects/CoreParseLib/lib/json-c
+# Install script for directory: /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -60,8 +60,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/libjson-c.so.5.2.0"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/libjson-c.so.5"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/libjson-c.so.5.2.0"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/libjson-c.so.5"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so.5.2.0"
@@ -83,7 +83,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/libjson-c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/libjson-c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -93,14 +93,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/libjson-c.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/libjson-c.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets.cmake"
-         "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles/Export/lib/cmake/json-c/json-c-targets.cmake")
+         "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles/Export/lib/cmake/json-c/json-c-targets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -109,18 +109,18 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles/Export/lib/cmake/json-c/json-c-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles/Export/lib/cmake/json-c/json-c-targets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles/Export/lib/cmake/json-c/json-c-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles/Export/lib/cmake/json-c/json-c-targets-debug.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/json-c-config.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/json-c-config.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/json-c.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/json-c.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -133,29 +133,29 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/usr/local/include/json-c" TYPE FILE FILES
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/json_config.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/json.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/arraylist.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/debug.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_c_version.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_inttypes.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_object.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_object_iterator.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_tokener.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_types.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_util.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_visit.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/linkhash.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/printbuf.h"
-    "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_pointer.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/json_config.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/json.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/arraylist.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/debug.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_c_version.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_inttypes.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_object.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_object_iterator.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_tokener.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_types.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_util.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_visit.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/linkhash.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/printbuf.h"
+    "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_pointer.h"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/doc/cmake_install.cmake")
-  include("/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests/cmake_install.cmake")
-  include("/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/apps/cmake_install.cmake")
+  include("/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/doc/cmake_install.cmake")
+  include("/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests/cmake_install.cmake")
+  include("/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/apps/cmake_install.cmake")
 
 endif()
 
@@ -167,5 +167,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

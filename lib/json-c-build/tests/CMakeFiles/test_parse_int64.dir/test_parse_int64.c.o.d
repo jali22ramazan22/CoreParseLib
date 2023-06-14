@@ -1,5 +1,5 @@
 tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o: \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/test_parse_int64.c \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/test_parse_int64.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -27,16 +27,16 @@ tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/config.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_inttypes.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/json_config.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/config.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_inttypes.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/json_config.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_util.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_object.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_inttypes.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_types.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/printbuf.h
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_util.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_object.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_inttypes.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_types.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/printbuf.h

@@ -1,7 +1,7 @@
 #ifndef CORE_PARSE_LIB_DIR_MANAGMENT_H
 #define CORE_PARSE_LIB_DIR_MANAGMENT_H
-#include "common.h"
-#include "string_utils.h"
+#include "../common.h"
+#include "../string_utils_module/string_utils.h"
 typedef struct {
     char dirpath[BUFFER];
     DIR* dp;

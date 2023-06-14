@@ -1,9 +1,9 @@
 #ifndef CORE_PARSE_LIB_CORE_PARSE_LIB_H
 #define CORE_PARSE_LIB_CORE_PARSE_LIB_H
-#include "src/file_management.h"
+#include "src/file_dir_module/file_management.h"
 #include "src/common.h"
-#include "src/string_utils.h"
-#include "src/dir_management.h"
+#include "src/string_utils_module/string_utils.h"
+#include "src/file_dir_module/dir_management.h"
 //--------------------------FILE-MANAGMENT MODULE------------------------------------
 
 //---------Auxillary functions/procedures of file_managment module---------------

@@ -1,5 +1,5 @@
 apps/CMakeFiles/json_parse.dir/json_parse.c.o: \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/apps/json_parse.c \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/apps/json_parse.c \
  /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -70,19 +70,19 @@ apps/CMakeFiles/json_parse.dir/json_parse.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/apps_config.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_object.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_inttypes.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/json_config.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/apps_config.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_object.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_inttypes.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/json_config.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_types.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/printbuf.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_tokener.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_object.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/json_util.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_types.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/printbuf.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_tokener.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_object.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/json_util.h \
  /usr/include/x86_64-linux-gnu/sys/resource.h \
  /usr/include/x86_64-linux-gnu/bits/resource.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \

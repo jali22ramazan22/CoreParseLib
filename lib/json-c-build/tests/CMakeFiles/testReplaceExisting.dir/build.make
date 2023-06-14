@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jalil/CLionProjects/CoreParseLib/lib/json-c
+CMAKE_SOURCE_DIR = /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build
+CMAKE_BINARY_DIR = /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/testReplaceExisting.dir/depend.make
@@ -70,18 +70,18 @@ include tests/CMakeFiles/testReplaceExisting.dir/progress.make
 include tests/CMakeFiles/testReplaceExisting.dir/flags.make
 
 tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o: tests/CMakeFiles/testReplaceExisting.dir/flags.make
-tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o: /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/testReplaceExisting.c
+tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o: /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/testReplaceExisting.c
 tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o: tests/CMakeFiles/testReplaceExisting.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o -MF CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o.d -o CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o -c /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/testReplaceExisting.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o"
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o -MF CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o.d -o CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o -c /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/testReplaceExisting.c
 
 tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.i"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/testReplaceExisting.c > CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.i
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/testReplaceExisting.c > CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.i
 
 tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.s"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/testReplaceExisting.c -o CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.s
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/testReplaceExisting.c -o CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.s
 
 # Object files for target testReplaceExisting
 testReplaceExisting_OBJECTS = \
@@ -94,18 +94,18 @@ tests/testReplaceExisting: tests/CMakeFiles/testReplaceExisting.dir/testReplaceE
 tests/testReplaceExisting: tests/CMakeFiles/testReplaceExisting.dir/build.make
 tests/testReplaceExisting: libjson-c.so.5.2.0
 tests/testReplaceExisting: tests/CMakeFiles/testReplaceExisting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable testReplaceExisting"
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testReplaceExisting.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable testReplaceExisting"
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testReplaceExisting.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/testReplaceExisting.dir/build: tests/testReplaceExisting
 .PHONY : tests/CMakeFiles/testReplaceExisting.dir/build
 
 tests/CMakeFiles/testReplaceExisting.dir/clean:
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/testReplaceExisting.dir/cmake_clean.cmake
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/testReplaceExisting.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/testReplaceExisting.dir/clean
 
 tests/CMakeFiles/testReplaceExisting.dir/depend:
-	cd /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jalil/CLionProjects/CoreParseLib/lib/json-c /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/tests/CMakeFiles/testReplaceExisting.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/tests/CMakeFiles/testReplaceExisting.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/testReplaceExisting.dir/depend
 

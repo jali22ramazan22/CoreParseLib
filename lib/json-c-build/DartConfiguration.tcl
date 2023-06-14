@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/jalil/CLionProjects/CoreParseLib/lib/json-c
-BuildDirectory: /home/jalil/CLionProjects/CoreParseLib/lib/json-c-build
+SourceDirectory: /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c
+BuildDirectory: /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/jalil/CLionProjects/CoreParseLib/lib/json-c"
+ConfigureCommand: "/usr/bin/cmake" "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

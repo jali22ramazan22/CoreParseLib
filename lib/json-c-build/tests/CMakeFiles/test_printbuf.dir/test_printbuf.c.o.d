@@ -1,5 +1,5 @@
 tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o: \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/test_printbuf.c \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/test_printbuf.c \
  /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -62,5 +62,5 @@ tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/strings.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/debug.h \
- /home/jalil/CLionProjects/CoreParseLib/lib/json-c/printbuf.h
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/debug.h \
+ /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/printbuf.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests
+# Install script for directory: /home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

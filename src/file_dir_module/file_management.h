@@ -1,7 +1,7 @@
 #ifndef CORE_PARSE_LIB_FILE_MANAGMENT_H
 #define CORE_PARSE_LIB_FILE_MANAGMENT_H
-#include "common.h"
-#include "string_utils.h"
+#include "../common.h"
+#include "../string_utils_module/string_utils.h"
 
 //creating file procedure
 void create_file(char*);

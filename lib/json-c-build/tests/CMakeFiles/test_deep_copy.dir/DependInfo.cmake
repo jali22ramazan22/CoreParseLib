@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jalil/CLionProjects/CoreParseLib/lib/json-c/tests/test_deep_copy.c" "tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o" "gcc" "tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o.d"
+  "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c/tests/test_deep_copy.c" "tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o" "gcc" "tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/jalil/CLionProjects/CoreParseLib/lib/json-c-build/CMakeFiles/json-c.dir/DependInfo.cmake"
+  "/home/jalil/Desktop/Never_list_MAIN/CoreParseLib/lib/json-c-build/CMakeFiles/json-c.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
