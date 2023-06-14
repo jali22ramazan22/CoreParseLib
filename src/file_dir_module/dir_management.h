@@ -16,6 +16,8 @@ directory_struct* directory_connection(char*);
 //the creation makes dir changeable, readable and also deletes dynamic data from pointer on struct
 void create_directory(directory_struct* );
 
+bool find_directory(directory_struct*);
+
 //the procedure that combines two functions "create_dir", "dir_connection"
 void create_directory_procedure(char*);
 

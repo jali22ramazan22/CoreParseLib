@@ -18,7 +18,7 @@ void S_concatenate_str(char*, char*);
 char* D_concatenate_str(const char*, const char*);
 
 //returns size of string
-int get_len(char*);
+int get_len(const char*);
 
 //divides input str into array of strings consisting separate words or symbols
 //dynamic allocation of memory. There's a need of freeing heap memory

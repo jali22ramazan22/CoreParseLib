@@ -13,6 +13,7 @@
 #include <string.h>
 #include <time.h>
 #include "../lib/json-c-build/json.h"
+
 static char root_const[BUFFER] = "../data/";
 
 #endif //CORE_PARSE_LIB_COMMON_H

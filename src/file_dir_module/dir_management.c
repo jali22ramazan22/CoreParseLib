@@ -31,7 +31,6 @@ void create_directory_procedure(char* directory_name){
         printf("Error: Failed to establish directory connection.\n");
         return;
     }
-
     if (connection->dp != NULL) {
         printf("Error: The following directory already exists.\n");
         closedir(connection->dp);
@@ -40,4 +39,8 @@ void create_directory_procedure(char* directory_name){
     }
 
     create_directory(connection);
+}
+
+bool find_directory(directory_struct* connection){
+    return connection->dp;
 }

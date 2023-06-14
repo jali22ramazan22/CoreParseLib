@@ -16,6 +16,6 @@ add_library(CORE_PARSE_LIB STATIC
     src/file_dir_module/file_management.c
     src/file_dir_module/dir_management.c
     src/string_utils_module/string_utils.c
-    src/parsing_json_module/json-manipulation.h src/parsing_json_module/json-manipulation.c)
+    src/parsing_json_module/json-manipulation.h src/parsing_json_module/json-manipulation.c coreparselib.h)
 target_link_libraries(CORE_PARSE_LIB PRIVATE json-c)
 

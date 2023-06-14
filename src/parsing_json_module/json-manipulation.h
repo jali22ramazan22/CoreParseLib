@@ -5,9 +5,8 @@
 #include "../file_dir_module/file_management.h"
 typedef struct{
     char* title;
-    char** text;
+    char* text;
     char* created_at;
-    char* changed_at; 
 }note;
 
 typedef struct{
@@ -16,10 +15,11 @@ typedef struct{
     int day;
 }date;
 
+
 date return_time(void);
 
-void write_a_note_(note*);
-char* date_to_str(const date);
+void write_a_note(note*);
+char* date_to_str(date);
 
 
 

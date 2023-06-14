@@ -61,7 +61,7 @@ void S_concatenate_str(char* str1, char* str2){
 }
 
 
-int get_len(char* str){
+int get_len(const char* str){
    int i = 0;
    for(; str[i] != '\0'; ++i);
    return i;

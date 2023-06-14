@@ -1,5 +1,6 @@
 #include "../string_utils_module/string_utils.h"
-
+#include "file_management.h"
+#include "dir_management.h"
 FILE* file_connection(char* filename, const char* mode){
     S_concatenate_str(root_const, filename);
     FILE* fp = fopen(filename, mode);
@@ -29,3 +30,7 @@ void data_creation_procedure(char* filename){
     }
 }
 
+void config_setting_procedure(void){
+    create_directory_procedure(confing_path);
+    data_creation_procedure("settings.txt");
+}
