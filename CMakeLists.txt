@@ -10,7 +10,9 @@ add_executable(CoreParseLib debug.c
         modules/filedir/file_manage.h
         modules/filedir/file_manage.c
         modules/jsonParse/jsonInsiders.h
-        modules/jsonParse/jsonInsiders.c)
+        modules/jsonParse/jsonInsiders.c
+        modules/jsonParse/jsonUtils.h
+        modules/jsonParse/jsonUtils.c )
 
 find_package(json-c CONFIG)
 target_link_libraries(${PROJECT_NAME} PRIVATE json-c::json-c)

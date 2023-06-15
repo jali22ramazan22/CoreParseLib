@@ -4,4 +4,5 @@
 #include "modules/common.h"
 #include "modules/filedir/file_manage.h"
 #include "modules/jsonParse/jsonInsiders.h"
+#include "modules/jsonParse/jsonUtils.h"
 #endif //COREPARSELIB_COREPARSELIB_H

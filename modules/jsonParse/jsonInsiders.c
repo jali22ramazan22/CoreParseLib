@@ -1,76 +1,99 @@
 #include "jsonInsiders.h"
 
 
-void write_a_note(note* NOTE_PTR, FILE* file_pointer){
-    char str_title[BUFFER] = "Untitled2";
-    char str_text[BUFFER] = "Custom text for checking it out";
 
-    if (NOTE_PTR == NULL){
-        NOTE_PTR = (note*)malloc(sizeof(note) * 1);
-        NOTE_PTR->createdAt = date_to_str(return_time());
-
-        str_title[strcspn(str_title, "\n")] = '\0';
-        str_text[strcspn(str_text, "\n")] = '\0';
-
-        NOTE_PTR->title = static_to_dynamic_copy(str_title);
-        NOTE_PTR->text = static_to_dynamic_copy(str_text);
+void write_note(note* finite_note, FILE* file_pointer, char* filename) {
+    if(filename == NULL)
+        filename = UNTITLED;
+    // Check if finite_note is NULL, create a new note object if it is
+    if (finite_note == NULL) {
+        finite_note = create_note_object("Untitled", "", date_to_str(return_time()));
     }
 
-    if (file_pointer == NULL){
-        printf("Do you really want to create a file? [Y/n]");
-        char answer;
-        scanf(" %c", &answer);
-
-        if(tolower(answer) == 'n')
+    // Check if file_pointer is NULL, create a new file if it is
+    if (file_pointer == NULL) {
+        create_notion_array(filename);
+        file_pointer = openFile(filename, DATA_DIR, "a+");
+        if (file_pointer == NULL) {
+            printf("Error: Unable to open file.\n");
             return;
-        char filename[BUFFER];
-
-        create_file("sample2.json", "../TestingDirectory/");
-        file_pointer = openFile("sample2.json", "../TestingDirectory/", "a");
+        }
     }
 
-    struct json_object* JSON_note = json_object_new_object();
-    struct json_object* JSON_title = json_object_new_string(NOTE_PTR->title);
-    struct json_object* JSON_text = json_object_new_string(NOTE_PTR->text);
-    struct json_object* JSON_creation_date = json_object_new_string(NOTE_PTR->createdAt);
+    char p_str[BUFFER];
+    fread(p_str, BUFFER, 1, file_pointer);
+    struct json_object* parsed_json;
 
-    json_object_object_add(JSON_note, "title", JSON_title);
-    json_object_object_add(JSON_note, "text", JSON_text);
-    json_object_object_add(JSON_note, "created_at", JSON_creation_date);
+    struct json_object* note_array; //new array that will be rewritten in JSON file
+    struct json_object* temp_array; //temporary array for reading current JSON file notes array
+    struct json_object* note_object; //the new note object
 
-    fprintf(file_pointer, "%s\n", json_object_to_json_string_ext(JSON_note, JSON_C_TO_STRING_PRETTY));
+    struct json_object* new_object = json_object_new_object();
+
+    // Parse the JSON string from the file
+    parsed_json = json_tokener_parse(p_str);
+
+    // Get the "notes" array from the parsed JSON
+    json_object_object_get_ex(parsed_json, "notes", &temp_array);
+    note_array = cpy_array(temp_array);
+
+    size_t size = getArraySize(note_array);
+
+    // Create a new note object and add its properties
+    note_object = json_object_new_object();
+    json_object_object_add(note_object, "title", json_object_new_string(finite_note->this_title));
+    json_object_object_add(note_object, "text", json_object_new_string(finite_note->this_text));
+    json_object_object_add(note_object, "createdAt", json_object_new_string(finite_note->this_createdAt));
+    json_object_object_add(note_object, "id", json_object_new_int((int)(size)));
+
+    // Add the note object to the note array
+    json_object_array_add(note_array, note_object);
+
+    // Add the note array to the new object
+    json_object_object_add(new_object, "notes", note_array);
+
+    // Close the file
     fclose(file_pointer);
-    json_object_put(JSON_note);
-    free(NOTE_PTR);
+
+    // Open the file in write mode and delete older content of the file
+    file_pointer = openFile(filename, DATA_DIR, "w");
+
+    // Convert the new object to a JSON string
+    const char* updated_json_string = json_object_to_json_string_ext(new_object, JSON_C_TO_STRING_PRETTY);
+
+    // Write the JSON string to the file
+    fputs(updated_json_string, file_pointer);
+
+    // Clean up the resources
+    destruct_note_object(finite_note);
+    fclose(file_pointer);
 }
 
-void create_notion_list(char* filename){
-    if(filename == NULL){
-        char* filename = "notion.json";
+
+
+size_t getArraySize(struct json_object *json_array) {
+    if (json_object_is_type(json_array, json_type_array)) {
+        return json_object_array_length(json_array);
     }
+    return 0;
+}
+
+void create_notion_array(char* filename){
+    if(filename == NULL)
+        return;
+
     create_file(filename, DATA_DIR);
     FILE* file_pointer = openFile(filename, DATA_DIR, "a+");
+
     struct json_object* object = json_object_new_object();
-    struct json_object* id_note = json_object_new_array();
-    
+    struct json_object* note_array = json_object_new_array();
+
+    json_object_object_add(object, "notes", note_array);
+    const char* json_str = json_object_to_json_string_ext(object, JSON_C_TO_STRING_PRETTY);
+    fprintf(file_pointer, "%s", json_str);
+    json_object_put(object);
+
     fclose(file_pointer);
 }
 
-date return_time(void){
-    time_t currentTime = time(NULL);
-    struct tm *localTime = localtime(&currentTime);
-    date creation_data;
 
-    creation_data.year = localTime->tm_year + 1900;
-    creation_data.month = localTime->tm_mon + 1;
-    creation_data.day = localTime->tm_mday;
-    return creation_data;
-}
-
-char* date_to_str(date creation_data){
-    char* created_at;
-    char buffer[BUFFER];
-    snprintf(buffer, BUFFER, "%d.%d.%d", creation_data.day, creation_data.month, creation_data.year);
-    created_at = static_to_dynamic_copy(buffer);
-    return created_at;
-}

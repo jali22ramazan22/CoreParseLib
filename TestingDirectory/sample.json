@@ -1,6 +1,7 @@
+
 {
-  "notes" : {
-    "id": [
+  "notes" :
+    [
       {
         "title" : "Untitled1",
         "text" : "Hello, world!",
@@ -13,5 +14,5 @@
         "createdAt": "15.06.23"
       }
     ]
-  }
+
 }

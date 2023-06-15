@@ -1,6 +1,6 @@
 #ifndef COREPARSELIB_COMMON_H
 #define COREPARSELIB_COMMON_H
-#define BUFFER 1024
+#define BUFFER 2048
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

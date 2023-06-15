@@ -26,12 +26,23 @@ int main(void){
 
     DELETE_THIS_STR*/
 
-    //--------------------JSONINSIDERS-DEBUG----------------------------------------
+    //--------------------JSONINSIDERS-DEBUG----------------------------------------()
+    char title[BUFFER] = "Untitled";
+    char text[BUFFER] = "Some sassy text";
+
+    note* new_note = create_note_object(title, text, date_to_str(return_time()));
+    FILE* fp = openFile(UNTITLED, DATA_DIR, "a+");
+    write_note(new_note, fp, NULL);
+    //--------------------JSONUTILS-DEBUG----------------------------
+
+    /*
+    note** notes = get_all_notes(fp);
+    for(int i = 0; notes[i] != NULL; ++i){
+        printf("%s\n", notes[i]->this_text);
+    }
+    notes_array_destructor(notes);
+    */
 
 
-    FILE* fp = openFile("notes.json", "../TestingDirectory/data/" , "a+");
-    create_DATA_dir();
-    config_creation();
-    write_a_note(NULL, fp);
     return 0;
 }
