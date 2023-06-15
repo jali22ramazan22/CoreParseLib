@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CoreParseLib"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\json-c\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jalil/Desktop/CoreParseLib/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CoreParseLib">
+				<Option output="/home/jalil/Desktop/CoreParseLib/cmake-build-default/CoreParseLib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jalil/Desktop/CoreParseLib/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/json-c"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 CoreParseLib"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CoreParseLib/fast">
+				<Option output="/home/jalil/Desktop/CoreParseLib/cmake-build-default/CoreParseLib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jalil/Desktop/CoreParseLib/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/json-c"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 CoreParseLib/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jalil/Desktop/CoreParseLib/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jalil/Desktop/CoreParseLib/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/jalil/Desktop/CoreParseLib/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/debug.c">
+			<Option target="CoreParseLib"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/modules/common.h">
+			<Option target="CoreParseLib"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/modules/filedir/file_manage.c">
+			<Option target="CoreParseLib"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/modules/filedir/file_manage.h">
+			<Option target="CoreParseLib"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/modules/jsonParse/jsonInsiders.c">
+			<Option target="CoreParseLib"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/modules/jsonParse/jsonInsiders.h">
+			<Option target="CoreParseLib"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/modules/stringUtils/stringUtils.c">
+			<Option target="CoreParseLib"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/modules/stringUtils/stringUtils.h">
+			<Option target="CoreParseLib"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/../../../../usr/local/lib/cmake/json-c/json-c-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\json-c\"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/../../../../usr/local/lib/cmake/json-c/json-c-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\json-c\"/>
+		</Unit>
+		<Unit filename="/home/jalil/Desktop/CoreParseLib/../../../../usr/local/lib/cmake/json-c/json-c-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\json-c\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

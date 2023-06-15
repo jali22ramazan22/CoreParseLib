@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/CoreParseLib.dir/debug.c.o CMakeFiles/CoreParseLib.dir/modules/stringUtils/stringUtils.c.o CMakeFiles/CoreParseLib.dir/modules/filedir/file_manage.c.o CMakeFiles/CoreParseLib.dir/modules/jsonParse/jsonInsiders.c.o -o CoreParseLib  -Wl,-rpath,/usr/local/lib /usr/local/lib/libjson-c.so.5.2.0 -lm 
