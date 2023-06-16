@@ -1,3 +1,0 @@
-/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/CoreParseLib.dir
-/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/edit_cache.dir
-/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/rebuild_cache.dir
