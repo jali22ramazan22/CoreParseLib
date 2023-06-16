@@ -92,7 +92,7 @@ char** str_parser(char* string){
 }
 
 
-char* static_to_dynamic_copy(char* static_string){
+char* static_to_dynamic_copy(const char* static_string){
     if (static_string == NULL) {
         printf("Error: input string does not exist");
         return NULL;

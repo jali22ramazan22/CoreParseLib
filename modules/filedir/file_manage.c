@@ -1,20 +1,22 @@
 #include "file_manage.h"
 
 void create_file(char* filename, char* root_catalogue){
-    char* filepath = concatenateStr(root_catalogue, filename);
+    char filepath[BUFFER];
+    sprintf(filepath, "%s%s", root_catalogue, filename);
     FILE* file_pointer = fopen(filepath, "w");
     if(file_pointer != NULL){
         fclose(file_pointer);
-        free(filepath);
+
         return;
     }
     fclose(file_pointer);
     printf("File created successfully\n");
-    free(filepath);
 }
 
 void create_dir(char* dirname, char* root_catalogue){
-    char* dir_path = concatenateStr(root_catalogue, dirname);
+    char dir_path[BUFFER];
+    sprintf(dir_path, "%s%s", root_catalogue, dirname);
+
     int status = mkdir(dir_path, 0700);
 
     if (status == 0){
@@ -24,20 +26,29 @@ void create_dir(char* dirname, char* root_catalogue){
         printf("Failed to create directory\n");
     }
 
-    free(dir_path);
 }
 
 char* create_DATA_dir(){
-    char* standart = (char*)malloc(sizeof(char)*10);
-    copy("../TestingDirectory/data", standart);
-    create_dir("data", "../TestingDirectory/");
-    return standart;
+    //MEDIAPATH + data
+    char DATA_PATH[BUFFER];
+    sprintf(DATA_PATH, "%s%s", MEDIA_PATH, "data/");
+
+    char* saving_path = (char*)malloc(sizeof(char)*10);
+    copy(DATA_PATH, saving_path);
+
+    create_dir("data", MEDIA_PATH);
+    return saving_path;
 }
 
 void config_creation(void){
-    create_dir("config", "../TestingDirectory/");
-    create_file("settings.txt", "../TestingDirectory/config/");
-    FILE* file_pointer = fopen("../TestingDirectory/config/settings.txt", "a+");
+    //MEDIA_PATH + config/ + settings.txt
+    create_dir("config", MEDIA_PATH);
+    char CONFIG_PATH[BUFFER];
+    sprintf(CONFIG_PATH, "%s%s", MEDIA_PATH, "config/");
+    create_file("settings.txt", CONFIG_PATH);
+    sprintf(CONFIG_PATH, "%s%s", CONFIG_PATH, "settings.txt");
+
+    FILE* file_pointer = fopen(CONFIG_PATH, "a+");
     if(file_pointer == NULL){
         return;
     }
@@ -48,7 +59,8 @@ void config_creation(void){
 }
 
 bool is_exist(char* filename, char* root_catalogue){
-    char* filepath = concatenateStr(root_catalogue, filename);
+    char filepath[BUFFER];
+    sprintf(filepath, "%s%s", root_catalogue, filename);
     FILE* file_pointer = fopen(filepath, "r");
     if(file_pointer == NULL)
         return false;
@@ -56,10 +68,31 @@ bool is_exist(char* filename, char* root_catalogue){
 }
 
 FILE* openFile(char* filename, char* root_catalogue, char* mode){
-    char* filepath = concatenateStr(root_catalogue, filename);
+    char filepath[BUFFER];
+    sprintf(filepath, "%s%s", root_catalogue, filename);
     FILE* file_pointer = fopen(filepath, mode);
     if(file_pointer == NULL)
         return NULL;
-    free(filepath);
     return file_pointer;
+}
+
+
+bool is_directory_exist(const char* dirname, const char* root_catalogue){
+    char dir_path[BUFFER];
+    sprintf(dir_path, "%s%s", root_catalogue, dirname);
+    DIR* dir = opendir(dir_path);
+    if (!dir){
+        return false;
+    }
+    closedir(dir);
+    return true;
+
+}
+
+bool check_data_dir(){
+    if(!is_directory_exist(DATA_DIR_NAME, MEDIA_PATH)){
+        printf("Directory %s does not exist\n", DATA_DIR);
+        return false;
+    }
+    return true;
 }

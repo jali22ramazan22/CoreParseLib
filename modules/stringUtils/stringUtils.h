@@ -21,6 +21,6 @@ char** str_parser(char* string);
 //if " " == symbol -> true
 bool detect_stop(char symbol);
 
-char* static_to_dynamic_copy(char* static_string);
+char* static_to_dynamic_copy(const char* static_string);
 
 #endif //COREPARSELIB_STRINGUTILS_H

@@ -9,8 +9,21 @@ typedef struct{
     char* this_title;
     char* this_text;
     char* this_createdAt;
-    int id;
+    char* id;
 }note;
+
+typedef struct{
+    char* this_text;
+    char* this_created_at;
+    char* this_must_finished;
+}task;
+
+typedef struct{
+    char* this_note_title;
+    char* this_note_id;
+    char* this_tag;
+    char* this_notePath;
+}tag;
 
 typedef struct{
     int year;
@@ -37,17 +50,11 @@ char* date_to_str(date creation_data);
 //custom array you can copy all objects into new array
 struct json_object* cpy_array(struct json_object* temp_array);
 
-//GOVNOCODE (However, JSON parsing function that return all notes in notes array.)
-//array ends the null ptr to make iteration without any size information possible.
-//EXAMPLE: notes** array -> [Note1, Note2, NULL] -> Note1, Note2, NULL = note structure
-note** get_all_notes(FILE* file_pointer);
+//transform "note" structure to json_note structure
+struct json_object* new_note_object(note* finite_note);
 
-//deleting dynamically allocated array of note structures
-//using another function 'destruct_note_object(note* note_ptr)'
-//that separately deletes allocated memory of every element
-void notes_array_destructor(note** notes_arr);
+char* unique_note_id_generator(void);
 
-//Just a util to return unsigned integer for getting the of notes array
-size_t get_notes_count(FILE* file_pointer);
+
 
 #endif //COREPARSELIB_JSONUTILS_H

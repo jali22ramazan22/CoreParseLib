@@ -40,7 +40,7 @@ note* create_note_object(const char* title, const char* text, const char* create
     note_object->this_title = static_to_dynamic_copy(title);
     note_object->this_text  = static_to_dynamic_copy(text);
     note_object->this_createdAt = static_to_dynamic_copy(createdAt);
-
+    note_object->id = static_to_dynamic_copy(unique_note_id_generator());
     return note_object;
 }
 
@@ -49,69 +49,32 @@ void destruct_note_object(note* note_object) {
     free(note_object->this_title);
     free(note_object->this_text);
     free(note_object->this_createdAt);
-
+    free(note_object->id);
     free(note_object);
 }
 
-size_t get_notes_count(FILE* file_pointer){
-    char p_str[BUFFER];
-    fread(p_str, BUFFER, 1, file_pointer);
-    struct json_object* parsed_json;
-    struct json_object* array;
-    parsed_json = json_tokener_parse(p_str);
-    json_object_object_get_ex(parsed_json, "notes", &array);
-    return getArraySize(array);
+struct json_object* new_note_object(note* finite_note){
+    struct json_object* note_object = json_object_new_object();
+    json_object_object_add(note_object, "title", json_object_new_string(finite_note->this_title));
+    json_object_object_add(note_object, "text", json_object_new_string(finite_note->this_text));
+    json_object_object_add(note_object, "createdAt", json_object_new_string(finite_note->this_createdAt));
+    json_object_object_add(note_object, "id", json_object_new_string(finite_note->id));
+    destruct_note_object(finite_note);
+    return note_object;
 }
 
 
-note** get_all_notes(FILE* file_pointer) {
-    note** notes_arr = NULL; //array of notes init
-    note* note_temp_pt = NULL;
+char* unique_note_id_generator(void){
+    //srand(time(NULL)); //preferable to put into main function to get every time another id
+    char buffer[BUFFER];
+    int random_int_part = rand() % 1000000;
+    int random_str_part = rand() % 128;
 
-    char p_str[BUFFER];
-    fread(p_str, BUFFER, 1, file_pointer); //reading json file
+    while(random_str_part > 90 || random_str_part < 65)
+        random_str_part = rand() % 128;
 
 
-    struct json_object* parsed_json;
-    struct json_object* array;
-    struct json_object* note_object;
-
-    struct json_object* title_obj;
-    struct json_object* text_obj;
-    struct json_object* createdAt_obj;
-
-    parsed_json = json_tokener_parse(p_str);
-    json_object_object_get_ex(parsed_json, "notes", &array); //notes array init
-
-    size_t len = json_object_array_length(array); //getting the size of array
-    notes_arr = malloc((len+1) * sizeof(note*)); //dynamic allocation of array of notes
-
-    for (size_t i = 0; i < len; ++i) {
-        note_object = json_object_array_get_idx(array, i); //getting every note
-
-        //transformation note_object to a combination of separate strings
-        json_object_object_get_ex(note_object, "title", &title_obj);
-        json_object_object_get_ex(note_object, "text", &text_obj);
-        json_object_object_get_ex(note_object, "createdAt", &createdAt_obj);
-
-        const char* title = json_object_get_string(title_obj);
-        const char* text = json_object_get_string(text_obj);
-        const char* createdAt = json_object_get_string(createdAt_obj);
-
-        //assignment procedures
-        note_temp_pt = create_note_object(title, text, createdAt);
-        notes_arr[i] = note_temp_pt;
-    }
-    notes_arr[len] = NULL;
-    return notes_arr;
-}
-
-void notes_array_destructor(note** notes_arr){
-    for(int i = 0; notes_arr[i] != NULL; ++i){
-        destruct_note_object(notes_arr[i]);
-        //avoiding double-deletion of mem-space
-        if(notes_arr[i] == NULL){
-            break;
-        }
-    }
+    sprintf(buffer, "%d%c", random_int_part, random_str_part);
+    char* note_id = static_to_dynamic_copy(buffer);
+    return note_id;
 }
