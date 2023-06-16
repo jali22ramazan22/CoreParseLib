@@ -1,4 +1,4 @@
-The system is: Linux - 5.19.0-43-generic - x86_64
+The system is: Linux - 5.19.0-45-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,15 +10,15 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3c305/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c305.dir/build.make CMakeFiles/cmTC_3c305.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_538d9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_538d9.dir/build.make CMakeFiles/cmTC_538d9.dir/build
+gmake[1]: Entering directory '/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -28,8 +28,8 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~2
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04.1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3c305.dir/'
- /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3c305.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYTBsyG.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_538d9.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_538d9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8IIcOO.s
 GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04.1) version 11.3.0 (x86_64-linux-gnu)
 	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
 
@@ -49,15 +49,15 @@ GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04.1) version 11.3.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: e13e2dc98bfa673227c4000e476a9388
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3c305.dir/'
- as -v --64 -o CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o /tmp/ccYTBsyG.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_538d9.dir/'
+ as -v --64 -o CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o /tmp/cc8IIcOO.s
 GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.'
-Linking C executable cmTC_3c305
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c305.dir/link.txt --verbose=1
-/usr/bin/cc  -v CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o -o cmTC_3c305 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_538d9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_538d9.dir/link.txt --verbose=1
+/usr/bin/cc  -v CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o -o cmTC_538d9 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -70,10 +70,10 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3c305' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3c305.'
- /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccT8ZORY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3c305 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3c305' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3c305.'
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_538d9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_538d9.'
+ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgl1GqF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_538d9 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_538d9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_538d9.'
+gmake[1]: Leaving directory '/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/CMakeTmp'
 
 
 
@@ -94,12 +94,12 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3c305/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c305.dir/build.make CMakeFiles/cmTC_3c305.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_538d9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_538d9.dir/build.make CMakeFiles/cmTC_538d9.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/jalil/CLionProjects/CoreParseLib/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -109,8 +109,8 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04.1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3c305.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3c305.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYTBsyG.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_538d9.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_538d9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8IIcOO.s]
   ignore line: [GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04.1) version 11.3.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
   ignore line: []
@@ -130,15 +130,15 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: e13e2dc98bfa673227c4000e476a9388]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3c305.dir/']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o /tmp/ccYTBsyG.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_538d9.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o /tmp/cc8IIcOO.s]
   ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.']
-  ignore line: [Linking C executable cmTC_3c305]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c305.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o -o cmTC_3c305 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_538d9]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_538d9.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o -o cmTC_538d9 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -151,13 +151,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3c305' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3c305.']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccT8ZORY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3c305 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_538d9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_538d9.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgl1GqF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_538d9 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccT8ZORY.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccgl1GqF.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -175,7 +175,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3c305] ==> ignore
+    arg [cmTC_538d9] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -187,7 +187,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-    arg [CMakeFiles/cmTC_3c305.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_538d9.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -218,1055 +218,3 @@ Parsed C implicit link information from above output:
   implicit fwks: []
 
 
-Determining if the include file fcntl.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_000df/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_000df.dir/build.make CMakeFiles/cmTC_000df.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_000df.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_000df.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_000df
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_000df.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_000df.dir/CheckIncludeFile.c.o -o cmTC_000df  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file inttypes.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2651a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2651a.dir/build.make CMakeFiles/cmTC_2651a.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2651a.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_2651a.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_2651a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2651a.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_2651a.dir/CheckIncludeFile.c.o -o cmTC_2651a  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file stdarg.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_47c11/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_47c11.dir/build.make CMakeFiles/cmTC_47c11.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_47c11.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_47c11.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_47c11
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47c11.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_47c11.dir/CheckIncludeFile.c.o -o cmTC_47c11  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file strings.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_626a0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_626a0.dir/build.make CMakeFiles/cmTC_626a0.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_626a0.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_626a0.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_626a0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_626a0.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_626a0.dir/CheckIncludeFile.c.o -o cmTC_626a0  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file string.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a6bf5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a6bf5.dir/build.make CMakeFiles/cmTC_a6bf5.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a6bf5.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_a6bf5.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a6bf5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6bf5.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_a6bf5.dir/CheckIncludeFile.c.o -o cmTC_a6bf5  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file syslog.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7028/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7028.dir/build.make CMakeFiles/cmTC_b7028.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b7028.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_b7028.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_b7028
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7028.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_b7028.dir/CheckIncludeFile.c.o -o cmTC_b7028  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if files stdlib.h;stdarg.h;string.h;float.h exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed805/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ed805.dir/build.make CMakeFiles/cmTC_ed805.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ed805.dir/STDC_HEADERS.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_ed805.dir/STDC_HEADERS.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CheckIncludeFiles/STDC_HEADERS.c
-Linking C executable cmTC_ed805
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed805.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_ed805.dir/STDC_HEADERS.c.o -o cmTC_ed805  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file unistd.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a492b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a492b.dir/build.make CMakeFiles/cmTC_a492b.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a492b.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_a492b.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a492b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a492b.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_a492b.dir/CheckIncludeFile.c.o -o cmTC_a492b  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file sys/types.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_656f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_656f5.dir/build.make CMakeFiles/cmTC_656f5.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_656f5.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_656f5.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_656f5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_656f5.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_656f5.dir/CheckIncludeFile.c.o -o cmTC_656f5  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file sys/resource.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_07c0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_07c0f.dir/build.make CMakeFiles/cmTC_07c0f.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_07c0f.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_07c0f.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_07c0f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07c0f.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_07c0f.dir/CheckIncludeFile.c.o -o cmTC_07c0f  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file dlfcn.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_278b3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_278b3.dir/build.make CMakeFiles/cmTC_278b3.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_278b3.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_278b3.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_278b3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_278b3.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_278b3.dir/CheckIncludeFile.c.o -o cmTC_278b3  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file endian.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3aa3b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3aa3b.dir/build.make CMakeFiles/cmTC_3aa3b.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3aa3b.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_3aa3b.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_3aa3b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3aa3b.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_3aa3b.dir/CheckIncludeFile.c.o -o cmTC_3aa3b  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file limits.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_57172/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_57172.dir/build.make CMakeFiles/cmTC_57172.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_57172.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_57172.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_57172
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57172.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_57172.dir/CheckIncludeFile.c.o -o cmTC_57172  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file locale.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6b79f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6b79f.dir/build.make CMakeFiles/cmTC_6b79f.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6b79f.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_6b79f.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_6b79f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b79f.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_6b79f.dir/CheckIncludeFile.c.o -o cmTC_6b79f  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file memory.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_136c8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_136c8.dir/build.make CMakeFiles/cmTC_136c8.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_136c8.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_136c8.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_136c8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_136c8.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_136c8.dir/CheckIncludeFile.c.o -o cmTC_136c8  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file stdint.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3a937/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3a937.dir/build.make CMakeFiles/cmTC_3a937.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3a937.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_3a937.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_3a937
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a937.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_3a937.dir/CheckIncludeFile.c.o -o cmTC_3a937  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file stdlib.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6daef/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6daef.dir/build.make CMakeFiles/cmTC_6daef.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6daef.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_6daef.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_6daef
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6daef.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_6daef.dir/CheckIncludeFile.c.o -o cmTC_6daef  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file sys/cdefs.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0d809/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0d809.dir/build.make CMakeFiles/cmTC_0d809.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0d809.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_0d809.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_0d809
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d809.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_0d809.dir/CheckIncludeFile.c.o -o cmTC_0d809  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file sys/param.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d3a39/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d3a39.dir/build.make CMakeFiles/cmTC_d3a39.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d3a39.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_d3a39.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_d3a39
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3a39.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_d3a39.dir/CheckIncludeFile.c.o -o cmTC_d3a39  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file sys/random.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_57b51/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_57b51.dir/build.make CMakeFiles/cmTC_57b51.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_57b51.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_57b51.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_57b51
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57b51.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_57b51.dir/CheckIncludeFile.c.o -o cmTC_57b51  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the include file sys/stat.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1612a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1612a.dir/build.make CMakeFiles/cmTC_1612a.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1612a.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_1612a.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_1612a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1612a.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_1612a.dir/CheckIncludeFile.c.o -o cmTC_1612a  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the INFINITY exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_02f4a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_02f4a.dir/build.make CMakeFiles/cmTC_02f4a.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_02f4a.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_02f4a.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_02f4a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02f4a.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_02f4a.dir/CheckSymbolExists.c.o -o cmTC_02f4a  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <math.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef INFINITY
-  return ((int*)(&INFINITY))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the isinf exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7fe94/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7fe94.dir/build.make CMakeFiles/cmTC_7fe94.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7fe94.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_7fe94.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_7fe94
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fe94.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_7fe94.dir/CheckSymbolExists.c.o -o cmTC_7fe94  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <math.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef isinf
-  return ((int*)(&isinf))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the isnan exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ffa73/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ffa73.dir/build.make CMakeFiles/cmTC_ffa73.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ffa73.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_ffa73.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ffa73
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ffa73.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_ffa73.dir/CheckSymbolExists.c.o -o cmTC_ffa73  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <math.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef isnan
-  return ((int*)(&isnan))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the nan exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ba8a0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ba8a0.dir/build.make CMakeFiles/cmTC_ba8a0.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ba8a0.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_ba8a0.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ba8a0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba8a0.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_ba8a0.dir/CheckSymbolExists.c.o -o cmTC_ba8a0  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <math.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef nan
-  return ((int*)(&nan))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the snprintf exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_31233/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_31233.dir/build.make CMakeFiles/cmTC_31233.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_31233.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_31233.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_31233
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31233.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_31233.dir/CheckSymbolExists.c.o -o cmTC_31233  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdio.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef snprintf
-  return ((int*)(&snprintf))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the vasprintf exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_51f67/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_51f67.dir/build.make CMakeFiles/cmTC_51f67.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_51f67.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_51f67.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_51f67
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51f67.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_51f67.dir/CheckSymbolExists.c.o -o cmTC_51f67  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdio.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef vasprintf
-  return ((int*)(&vasprintf))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the vsnprintf exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9aca4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9aca4.dir/build.make CMakeFiles/cmTC_9aca4.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9aca4.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_9aca4.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_9aca4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9aca4.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_9aca4.dir/CheckSymbolExists.c.o -o cmTC_9aca4  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdio.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef vsnprintf
-  return ((int*)(&vsnprintf))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the vprintf exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a584b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a584b.dir/build.make CMakeFiles/cmTC_a584b.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a584b.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_a584b.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_a584b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a584b.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_a584b.dir/CheckSymbolExists.c.o -o cmTC_a584b  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdio.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef vprintf
-  return ((int*)(&vprintf))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the open exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b2477/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b2477.dir/build.make CMakeFiles/cmTC_b2477.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b2477.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_b2477.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_b2477
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2477.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_b2477.dir/CheckSymbolExists.c.o -o cmTC_b2477  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <fcntl.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef open
-  return ((int*)(&open))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the realloc exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2503c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2503c.dir/build.make CMakeFiles/cmTC_2503c.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2503c.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_2503c.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_2503c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2503c.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_2503c.dir/CheckSymbolExists.c.o -o cmTC_2503c  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdlib.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef realloc
-  return ((int*)(&realloc))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the setlocale exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b07c4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b07c4.dir/build.make CMakeFiles/cmTC_b07c4.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b07c4.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_b07c4.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_b07c4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b07c4.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_b07c4.dir/CheckSymbolExists.c.o -o cmTC_b07c4  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <locale.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef setlocale
-  return ((int*)(&setlocale))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the uselocale exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ead5b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ead5b.dir/build.make CMakeFiles/cmTC_ead5b.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ead5b.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_ead5b.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ead5b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ead5b.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_ead5b.dir/CheckSymbolExists.c.o -o cmTC_ead5b  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <locale.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef uselocale
-  return ((int*)(&uselocale))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the strcasecmp exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3372c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3372c.dir/build.make CMakeFiles/cmTC_3372c.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3372c.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_3372c.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_3372c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3372c.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_3372c.dir/CheckSymbolExists.c.o -o cmTC_3372c  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <strings.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef strcasecmp
-  return ((int*)(&strcasecmp))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the strncasecmp exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2b019/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2b019.dir/build.make CMakeFiles/cmTC_2b019.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2b019.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_2b019.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_2b019
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b019.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_2b019.dir/CheckSymbolExists.c.o -o cmTC_2b019  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <strings.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef strncasecmp
-  return ((int*)(&strncasecmp))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the strdup exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bc016/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bc016.dir/build.make CMakeFiles/cmTC_bc016.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bc016.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_bc016.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_bc016
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc016.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_bc016.dir/CheckSymbolExists.c.o -o cmTC_bc016  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <string.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef strdup
-  return ((int*)(&strdup))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the strerror exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6073b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6073b.dir/build.make CMakeFiles/cmTC_6073b.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6073b.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_6073b.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_6073b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6073b.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_6073b.dir/CheckSymbolExists.c.o -o cmTC_6073b  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <string.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef strerror
-  return ((int*)(&strerror))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the vsyslog exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_11622/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_11622.dir/build.make CMakeFiles/cmTC_11622.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_11622.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_11622.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_11622
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11622.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_11622.dir/CheckSymbolExists.c.o -o cmTC_11622  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <syslog.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef vsyslog
-  return ((int*)(&vsyslog))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the getrandom exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0a2ad/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0a2ad.dir/build.make CMakeFiles/cmTC_0a2ad.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0a2ad.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_0a2ad.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_0a2ad
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a2ad.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_0a2ad.dir/CheckSymbolExists.c.o -o cmTC_0a2ad  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <sys/random.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef getrandom
-  return ((int*)(&getrandom))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the getrusage exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e56c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e56c2.dir/build.make CMakeFiles/cmTC_e56c2.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e56c2.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_e56c2.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_e56c2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e56c2.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_e56c2.dir/CheckSymbolExists.c.o -o cmTC_e56c2  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <sys/resource.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef getrusage
-  return ((int*)(&getrusage))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the strtoll exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e88af/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e88af.dir/build.make CMakeFiles/cmTC_e88af.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e88af.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_e88af.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_e88af
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e88af.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_e88af.dir/CheckSymbolExists.c.o -o cmTC_e88af  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdlib.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef strtoll
-  return ((int*)(&strtoll))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the strtoull exist passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ad9fd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ad9fd.dir/build.make CMakeFiles/cmTC_ad9fd.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ad9fd.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_ad9fd.dir/CheckSymbolExists.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ad9fd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad9fd.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_ad9fd.dir/CheckSymbolExists.c.o -o cmTC_ad9fd  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-File /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdlib.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef strtoull
-  return ((int*)(&strtoull))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the include file stddef.h exists passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5986c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5986c.dir/build.make CMakeFiles/cmTC_5986c.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5986c.dir/CheckIncludeFile.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_5986c.dir/CheckIncludeFile.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_5986c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5986c.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_5986c.dir/CheckIncludeFile.c.o -o cmTC_5986c  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining size of int passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8ef15/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8ef15.dir/build.make CMakeFiles/cmTC_8ef15.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8ef15.dir/SIZEOF_INT.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_8ef15.dir/SIZEOF_INT.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
-Linking C executable cmTC_8ef15
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ef15.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_8ef15.dir/SIZEOF_INT.c.o -o cmTC_8ef15  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining size of int64_t passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5697c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5697c.dir/build.make CMakeFiles/cmTC_5697c.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5697c.dir/SIZEOF_INT64_T.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_5697c.dir/SIZEOF_INT64_T.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CheckTypeSize/SIZEOF_INT64_T.c
-Linking C executable cmTC_5697c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5697c.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_5697c.dir/SIZEOF_INT64_T.c.o -o cmTC_5697c  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining size of long passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e8b18/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e8b18.dir/build.make CMakeFiles/cmTC_e8b18.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e8b18.dir/SIZEOF_LONG.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_e8b18.dir/SIZEOF_LONG.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
-Linking C executable cmTC_e8b18
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8b18.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_e8b18.dir/SIZEOF_LONG.c.o -o cmTC_e8b18  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining size of long long passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b325e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b325e.dir/build.make CMakeFiles/cmTC_b325e.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b325e.dir/SIZEOF_LONG_LONG.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_b325e.dir/SIZEOF_LONG_LONG.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
-Linking C executable cmTC_b325e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b325e.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_b325e.dir/SIZEOF_LONG_LONG.c.o -o cmTC_b325e  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining size of size_t passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4bf49/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4bf49.dir/build.make CMakeFiles/cmTC_4bf49.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4bf49.dir/SIZEOF_SIZE_T.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_4bf49.dir/SIZEOF_SIZE_T.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
-Linking C executable cmTC_4bf49
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bf49.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_4bf49.dir/SIZEOF_SIZE_T.c.o -o cmTC_4bf49  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining size of ssize_t passed with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fa5ae/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fa5ae.dir/build.make CMakeFiles/cmTC_fa5ae.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fa5ae.dir/SIZEOF_SSIZE_T.c.o
-/usr/bin/cc -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_fa5ae.dir/SIZEOF_SSIZE_T.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CheckTypeSize/SIZEOF_SSIZE_T.c
-Linking C executable cmTC_fa5ae
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa5ae.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_fa5ae.dir/SIZEOF_SSIZE_T.c.o -o cmTC_fa5ae  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-
-Performing C SOURCE FILE Test HAVE_ATOMIC_BUILTINS succeeded with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_baa24/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_baa24.dir/build.make CMakeFiles/cmTC_baa24.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_baa24.dir/src.c.o
-/usr/bin/cc -DHAVE_ATOMIC_BUILTINS -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_baa24.dir/src.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_baa24
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_baa24.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_baa24.dir/src.c.o -o cmTC_baa24  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-Source file was:
-int main() { int i, x = 0; i = __sync_add_and_fetch(&x,1); return x; }
-Performing C SOURCE FILE Test HAVE___THREAD succeeded with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7f4cf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7f4cf.dir/build.make CMakeFiles/cmTC_7f4cf.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7f4cf.dir/src.c.o
-/usr/bin/cc -DHAVE___THREAD -D_GNU_SOURCE  -fPIE -std=gnu11 -o CMakeFiles/cmTC_7f4cf.dir/src.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_7f4cf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f4cf.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_7f4cf.dir/src.c.o -o cmTC_7f4cf  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-Source file was:
-__thread int x = 0; int main() { return 0; }
-Performing C SOURCE FILE Test REENTRANT_WORKS succeeded with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_70382/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_70382.dir/build.make CMakeFiles/cmTC_70382.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_70382.dir/src.c.o
-/usr/bin/cc -DREENTRANT_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -fPIE -std=gnu11 -o CMakeFiles/cmTC_70382.dir/src.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_70382
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70382.dir/link.txt --verbose=1
-/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  CMakeFiles/cmTC_70382.dir/src.c.o -o cmTC_70382  -lm 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-Source file was:
-
-	/* uClibc toolchains without threading barf when _REENTRANT is defined */
-	#define _REENTRANT 1
-	#include <sys/types.h>
-	int main (void)
-	{
-	  return 0;
-	}
-	
-Performing C SOURCE FILE Test BSYMBOLIC_WORKS succeeded with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_807eb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_807eb.dir/build.make CMakeFiles/cmTC_807eb.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_807eb.dir/src.c.o
-/usr/bin/cc -DBSYMBOLIC_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -fPIE -std=gnu11 -o CMakeFiles/cmTC_807eb.dir/src.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_807eb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_807eb.dir/link.txt --verbose=1
-/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  CMakeFiles/cmTC_807eb.dir/src.c.o -o cmTC_807eb  -lm -Wl,-Bsymbolic-functions 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-Source file was:
-
-	int main (void)
-	{
-	  return 0;
-	}
-	
-Performing C SOURCE FILE Test VERSION_SCRIPT_WORKS succeeded with the following output:
-Change Dir: /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a9d3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a9d3.dir/build.make CMakeFiles/cmTC_6a9d3.dir/build
-gmake[1]: Entering directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6a9d3.dir/src.c.o
-/usr/bin/cc -DVERSION_SCRIPT_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -fPIE -std=gnu11 -o CMakeFiles/cmTC_6a9d3.dir/src.c.o -c /home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_6a9d3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a9d3.dir/link.txt --verbose=1
-/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  CMakeFiles/cmTC_6a9d3.dir/src.c.o -o cmTC_6a9d3  -lm -Wl,--version-script,/home/jalil/Desktop/CoreParseLib/build/lib/json-c/check-version-script.sym 
-gmake[1]: Leaving directory '/home/jalil/Desktop/CoreParseLib/build/CMakeFiles/CMakeTmp'
-
-
-Source file was:
-
-	int main (void)
-	{
-	  return 0;
-	}
-	
