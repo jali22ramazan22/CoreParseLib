@@ -26,19 +26,20 @@ int main(void){
     sleep(1);
 
 
-
+   DELETE_THIS_STR*/
     //--------------------JSONINSIDERS-DEBUG----------------------------------------()
     char title[BUFFER] = "Untitled";
     char text[BUFFER] = "Some sassy text";
 
-    note* new_note = create_note_object(title, text, date_to_str(return_time()));
+    char task_text[BUFFER] = "You need to do it!";
+    char must_finished[BUFFER] = "19.06.23";
 
-     MULFILE_write_note(new_note, NULL);
+    note* new_note = create_note_structure(title, text, date_to_str(return_time()));
+    task* new_task = create_task_structure(task_text, date_to_str(return_time()), must_finished);
 
     //--------------------JSONUTILS-DEBUG----------------------------
 
-
-    DELETE_THIS_STR*/
+    ONEFILE_write_note(new_note, NULL);
     printf("Hello world!");
     return 0;
 }

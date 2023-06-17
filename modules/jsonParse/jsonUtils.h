@@ -4,7 +4,7 @@
 #define COREPARSELIB_JSONUTILS_H
 #include "../common.h"
 #include "../stringUtils/stringUtils.h"
-
+#include "../filedir/file_manage.h"
 typedef struct{
     char* this_title;
     char* this_text;
@@ -16,14 +16,10 @@ typedef struct{
     char* this_text;
     char* this_created_at;
     char* this_must_finished;
+    char* id;
 }task;
 
-typedef struct{
-    char* this_note_title;
-    char* this_note_id;
-    char* this_tag;
-    char* this_notePath;
-}tag;
+
 
 typedef struct{
     int year;
@@ -31,14 +27,26 @@ typedef struct{
     int day;
 }date;
 
+
+
 //dynamic allocation and creation of note structure
-note* create_note_object(const char* title, const char* text, const char* createdAt);
+note* create_note_structure(const char* title, const char* text, const char* createdAt);
+
+
+task* create_task_structure(const char* text, const char* createdAt, const char* mustFinished);
+
+void destruct_task_structure(task* task_object);
+
+
+struct json_object* new_JSON_task_object(task* finite_task);
+
+
 
 //returns unsigned int of json array size
 size_t getArraySize(struct json_object* json_array);
 
 //custom destructor of dynamically allocated note_structure
-void destruct_note_object(note* note_object);
+void destruct_note_structure(note* note_object);
 
 //uses the time.h module to get local time
 date return_time(void);
@@ -46,15 +54,18 @@ date return_time(void);
 //function-transformator to get the string-value of date_time
 char* date_to_str(date creation_data);
 
-//gets as param temporary array, it is meant that if you read the JSON file and encountered
-//custom array you can copy all objects into new array
-struct json_object* cpy_array(struct json_object* temp_array);
+
 
 //transform "note" structure to json_note structure
-struct json_object* new_note_object(note* finite_note);
-
-char* unique_note_id_generator(void);
+struct json_object* new_JSON_note_object(note* finite_note);
 
 
+//generator for id of id, assigns every object pseudo-randomly generated key(id);
+//has format  int_arr + char
+// Example: 1210387F
+char* unique_object_id_generator(void);
+
+
+void config_creation(void);
 
 #endif //COREPARSELIB_JSONUTILS_H

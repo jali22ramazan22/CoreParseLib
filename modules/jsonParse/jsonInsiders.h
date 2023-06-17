@@ -3,8 +3,8 @@
 #include "../common.h"
 #include "../filedir/file_manage.h"
 #include "jsonUtils.h"
-#define UNTITLED "untitled_note.json"
-
+#define UNTITLED_NOTE "untitled_note.json"
+#define UNTITLED_TASK "untitled_task.json"
 //ONE-FILE functionality: for ergonomic purposes; if you desire to store all of you note_obj in one file - the following
 //functions for you
 
@@ -44,7 +44,24 @@ void notes_array_destructor(note** notes_arr);
 void MULFILE_write_note(note* finite_note, char* filename);
 
 //Function that called in "MULFILE_write_note" to create the new-untitled file
-void MULFILE_create_note_file(char* filename);
+void MULFILE_create_object_file(char* filename);
+
+//Creating json file for separate task
+//Always put created finite_task object, if NULL -> running will be aborted
+void MULFILE_write_task(task* finite_task, char* filename);
+
+
+
+
+
+//TASK : CREATE A LINKING FILE WITH ALL TYPES OF OBJECT AND ITS PATHES
+// - RECURSIVE FINDER
+// - LIST DIRECTORY
+// - CREATING LINK_SAVE_FILE
+// - SAVING ALSO IN JSON FILE AND ARRAYS IN IT WITH ALL OBJECTS
+
+
+
 
 
 #endif //COREPARSELIB_JSONINSIDERS_H

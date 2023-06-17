@@ -13,7 +13,6 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
-
 #include "json.h"
 
 #endif //COREPARSELIB_COMMON_H

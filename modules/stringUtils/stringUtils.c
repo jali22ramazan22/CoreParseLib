@@ -107,3 +107,22 @@ char* static_to_dynamic_copy(const char* static_string){
     str_ptr[size] = '\0';
     return str_ptr;
 }
+
+bool str_cmp(char* str1, char* str2){
+    int len1, len2;
+    len1 = get_length(str1);
+    len2 = get_length(str2);
+    if(len1 != len2)
+        return false;
+    if(str1 == NULL || str2 == NULL) {
+        printf("Error: string does not exist");
+        return false;
+    }
+    for(int i = 0; i < len1; ++i){
+        if(str1[i] != str2[i])
+            return false;
+    }
+
+    return true;
+
+}

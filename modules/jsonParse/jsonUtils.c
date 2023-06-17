@@ -20,32 +20,37 @@ char* date_to_str(date creation_data){
 }
 
 
-struct json_object* cpy_array(struct json_object* temp_array){
-    struct json_object* new_arr = json_object_new_array();
-    size_t lenArr = getArraySize(temp_array);
-
-    int i = 0;
-    struct json_object* temp_note_object;
-    for(; i < lenArr; ++i){
-        temp_note_object = json_object_array_get_idx(temp_array, i);
-        json_object_array_add(new_arr, temp_note_object);
-    }
-    return new_arr;
-}
-
-
-note* create_note_object(const char* title, const char* text, const char* createdAt){
+note* create_note_structure(const char* title, const char* text, const char* createdAt){
     note* note_object; char date_time_str[BUFFER];
     note_object = malloc(sizeof(note));
     note_object->this_title = static_to_dynamic_copy(title);
     note_object->this_text  = static_to_dynamic_copy(text);
     note_object->this_createdAt = static_to_dynamic_copy(createdAt);
-    note_object->id = static_to_dynamic_copy(unique_note_id_generator());
+    note_object->id = static_to_dynamic_copy(unique_object_id_generator());
     return note_object;
 }
 
 
-void destruct_note_object(note* note_object) {
+
+task* create_task_structure(const char* text, const char* createdAt, const char* mustFinished){
+    task* task_object; char date_time_str[BUFFER];
+    task_object = malloc(sizeof(note));
+    task_object->this_text = static_to_dynamic_copy(text);
+    task_object->this_created_at = static_to_dynamic_copy((createdAt));
+    task_object->this_must_finished = static_to_dynamic_copy((mustFinished));
+    task_object->id = static_to_dynamic_copy(unique_object_id_generator());
+    return task_object;
+}
+
+void destruct_task_structure(task* task_object){
+    free(task_object->this_text);
+    free(task_object->this_created_at);
+    free(task_object->this_must_finished);
+    free(task_object->id);
+    free(task_object);
+}
+
+void destruct_note_structure(note* note_object) {
     free(note_object->this_title);
     free(note_object->this_text);
     free(note_object->this_createdAt);
@@ -53,20 +58,32 @@ void destruct_note_object(note* note_object) {
     free(note_object);
 }
 
-struct json_object* new_note_object(note* finite_note){
+struct json_object* new_JSON_note_object(note* finite_note){
     struct json_object* note_object = json_object_new_object();
     json_object_object_add(note_object, "title", json_object_new_string(finite_note->this_title));
     json_object_object_add(note_object, "text", json_object_new_string(finite_note->this_text));
     json_object_object_add(note_object, "createdAt", json_object_new_string(finite_note->this_createdAt));
     json_object_object_add(note_object, "id", json_object_new_string(finite_note->id));
-    destruct_note_object(finite_note);
+    destruct_note_structure(finite_note);
     return note_object;
 }
 
 
-char* unique_note_id_generator(void){
+
+struct json_object* new_JSON_task_object(task* finite_task){
+    struct json_object* task_object = json_object_new_object();
+    json_object_object_add(task_object, "text", json_object_new_string(finite_task->this_text));
+    json_object_object_add(task_object, "createdAt", json_object_new_string(finite_task->this_created_at));
+    json_object_object_add(task_object, "mustFinished", json_object_new_string(finite_task->this_must_finished));
+    json_object_object_add(task_object, "id", json_object_new_string(finite_task->id));
+    destruct_task_structure(finite_task);
+    return task_object;
+}
+
+
+char* unique_object_id_generator(void){
     //srand(time(NULL)); //preferable to put into main function to get every time another id
-    char buffer[BUFFER];
+    char buffer[BUFFER]; //ALLOWED
     int random_int_part = rand() % 1000000;
     int random_str_part = rand() % 128;
 
@@ -78,3 +95,11 @@ char* unique_note_id_generator(void){
     char* note_id = static_to_dynamic_copy(buffer);
     return note_id;
 }
+
+
+void config_creation(void){
+    create_dir("config", MEDIA_PATH);
+    create_file("config.json", CONFIG_PATH);
+}
+
+

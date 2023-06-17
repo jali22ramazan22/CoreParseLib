@@ -9,7 +9,6 @@ static const char stop_words[3] = {' ', '.', '/'};
 int get_length(const char* string);
 
 //Following function implements basic_str + add_str action
-
 char* concatenateStr(char* basic_str, char* add_str);
 
 //src -> dst
@@ -20,7 +19,10 @@ char** str_parser(char* string);
 
 //if " " == symbol -> true
 bool detect_stop(char symbol);
-
+//char static_str[BUFFER] -> char* dynamic_str[any_sz]
 char* static_to_dynamic_copy(const char* static_string);
+
+//if(str1 == str2) -> [false, true]
+bool str_cmp(char* str1, char* str2);
 
 #endif //COREPARSELIB_STRINGUTILS_H

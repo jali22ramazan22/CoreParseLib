@@ -3,67 +3,51 @@
 //ONE-FILE functionality: for ergonomic purposes; if you desire to store all of you note_obj in one file - the following
 //functions for you
 
-void ONEFILE_write_note(note* finite_note, char* filename){
-    FILE *file_pointer = NULL;
+void ONEFILE_write_note(note* finite_note, char* filename) {
+    FILE *file_pointer;
 
-    if(!check_data_dir())
-        return;
-
+    if (!check_data_dir()){
+        sleep(1);
+        create_data_dir();
+        filename = UNTITLED_NOTE;
+        ONEFILE_create_notion_array(filename);
+    }
     if(filename == NULL){
-        ONEFILE_create_notion_array(UNTITLED);
-        filename = UNTITLED;
+        filename = UNTITLED_NOTE;
+        ONEFILE_create_notion_array(filename);
     }
-    if(finite_note == NULL){
+
+    file_pointer = openFile(filename, DATA_DIR, "r+");
+
+    fseek(file_pointer, 0, SEEK_END);
+    long file_size = ftell(file_pointer);
+    char* buffer = malloc(sizeof(char)*(file_size + 1));
+
+    if(buffer == NULL){
+        fclose(file_pointer);
         return;
     }
-
-    file_pointer = openFile(filename, DATA_DIR, "r");
-
-    if(file_pointer == NULL){
-        printf("The file does not exist\n");
-        create_file(filename, DATA_DIR);
-        file_pointer = openFile(filename, DATA_DIR, "r");
-        printf("The file \"%s\" created in \"%s\" instead\n", filename, DATA_DIR);
+    fseek(file_pointer, 0, SEEK_SET);
+    size_t read_size = fread(buffer, 1, file_size, file_pointer);
+    if (ferror(file_pointer)) {
+        printf("Error:");
+        fclose(file_pointer);
+        free(buffer);
+        return;
     }
-    struct json_object* parsed_json_file;
-    struct json_object* temp_array;
-    struct json_object* new_array;
-    struct json_object* new_json_file;
-    struct json_object* note_object;
-
-    char buffer[BUFFER];
-    fread(buffer, BUFFER, 1, file_pointer);
-    parsed_json_file = json_tokener_parse(buffer);
+    struct json_object* parsed_json = json_tokener_parse(buffer);
+    struct json_object* notes_array;
+    if(json_object_object_get_ex(parsed_json, "notes", &notes_array)){
+        struct json_object* note_object = new_JSON_note_object(finite_note);
+        json_object_array_put_idx(notes_array, json_object_array_length(notes_array), note_object);
+        fseek(file_pointer, 0, SEEK_SET);
+        fprintf(file_pointer, "%s", json_object_to_json_string_ext(parsed_json, JSON_C_TO_STRING_PRETTY));
+    }
     fclose(file_pointer);
-
-    json_object_object_get_ex(parsed_json_file, "notes", &temp_array);
-    new_array = cpy_array(temp_array);
-    size_t len = getArraySize(new_array);
-
-    note_object = new_note_object(finite_note);
-
-    json_object_array_add(new_array, note_object);
-
-    new_json_file = json_object_new_object();
-    json_object_object_add(new_json_file, "notes", new_array);
-
-
-    file_pointer = openFile(filename, DATA_DIR, "w+");
-
-    const char* input_stream_JSON = json_object_to_json_string_ext(new_json_file, JSON_C_TO_STRING_PRETTY);
-    fputs(input_stream_JSON, file_pointer);
-
-    fclose(file_pointer);
+    free(buffer);
+    json_object_put(parsed_json);
 }
 
-
-
-size_t getArraySize(struct json_object *json_array) {
-    if (json_object_is_type(json_array, json_type_array)) {
-        return json_object_array_length(json_array);
-    }
-    return 0;
-}
 
 void ONEFILE_create_notion_array(char* filename){
     if(filename == NULL)
@@ -120,12 +104,13 @@ note** ONEFILE_get_all_notes(FILE* file_pointer) {
         const char* createdAt = json_object_get_string(createdAt_obj);
 
         //assignment procedures
-        note_temp_pt = create_note_object(title, text, createdAt);
+        note_temp_pt = create_note_structure(title, text, createdAt);
         notes_arr[i] = note_temp_pt;
     }
     notes_arr[len] = NULL;
     return notes_arr;
 }
+
 size_t ONEFILE_get_notes_count(FILE* file_pointer){
     char p_str[BUFFER];
     fread(p_str, BUFFER, 1, file_pointer);
@@ -133,13 +118,13 @@ size_t ONEFILE_get_notes_count(FILE* file_pointer){
     struct json_object* array;
     parsed_json = json_tokener_parse(p_str);
     json_object_object_get_ex(parsed_json, "notes", &array);
-    return getArraySize(array);
+    return json_object_array_length(array);
 }
 
 
 void notes_array_destructor(note** notes_arr){
     for(int i = 0; notes_arr[i] != NULL; ++i){
-        destruct_note_object(notes_arr[i]);
+        destruct_note_structure(notes_arr[i]);
         //avoiding double-deletion of mem-space
         if(notes_arr[i] == NULL){
             break;
@@ -163,13 +148,13 @@ void MULFILE_write_note(note* finite_note, char* filename){
     if(finite_note == NULL)
         return;
     if(filename == NULL){
-        MULFILE_create_note_file(UNTITLED);
-        filename = UNTITLED;
+        MULFILE_create_object_file(UNTITLED_NOTE);
+        filename = UNTITLED_NOTE;
     }
     file_pointer = openFile(filename, DATA_DIR, "w+");
 
     struct json_object* json_file = json_object_new_object();
-    struct json_object* note_object = new_note_object(finite_note);
+    struct json_object* note_object = new_JSON_note_object(finite_note);
 
     json_object_object_add(json_file, "note" ,note_object);
 
@@ -179,7 +164,7 @@ void MULFILE_write_note(note* finite_note, char* filename){
     fclose(file_pointer);
 }
 
-void MULFILE_create_note_file(char* filename){
+void MULFILE_create_object_file(char* filename){
     if(filename == NULL)
         return;
     if(is_exist(filename, DATA_DIR))
@@ -189,3 +174,29 @@ void MULFILE_create_note_file(char* filename){
     sprintf(filepath, "%s%s", MEDIA_PATH, DATA_DIR_NAME);
     create_file(filename, DATA_DIR);
 }
+
+
+
+void MULFILE_write_task(task* finite_task, char* filename){
+    FILE* file_pointer;
+    if(finite_task == NULL)
+        return;
+    if(filename == NULL){
+        MULFILE_create_object_file(UNTITLED_TASK);
+        filename = UNTITLED_TASK;
+    }
+
+    file_pointer = openFile(filename, DATA_DIR, "w+");
+
+    struct json_object* json_file = json_object_new_object();
+    struct json_object* task_object = new_JSON_task_object(finite_task);
+
+    json_object_object_add(json_file, "task", task_object);
+
+    const char* file_input = json_object_to_json_string_ext(json_file, JSON_C_TO_STRING_PRETTY);
+    fputs(file_input, file_pointer);
+    json_object_put(json_file);
+    fclose(file_pointer);
+}
+
+

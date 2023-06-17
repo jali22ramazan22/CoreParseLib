@@ -28,43 +28,8 @@ void create_dir(char* dirname, char* root_catalogue){
 
 }
 
-char* create_DATA_dir(){
-    //MEDIAPATH + data
-    char DATA_PATH[BUFFER];
-    sprintf(DATA_PATH, "%s%s", MEDIA_PATH, "data/");
-
-    char* saving_path = (char*)malloc(sizeof(char)*10);
-    copy(DATA_PATH, saving_path);
-
-    create_dir("data", MEDIA_PATH);
-    return saving_path;
-}
-
-void config_creation(void){
-    //MEDIA_PATH + config/ + settings.txt
-    create_dir("config", MEDIA_PATH);
-    char CONFIG_PATH[BUFFER];
-    sprintf(CONFIG_PATH, "%s%s", MEDIA_PATH, "config/");
-    create_file("settings.txt", CONFIG_PATH);
-    sprintf(CONFIG_PATH, "%s%s", CONFIG_PATH, "settings.txt");
-
-    FILE* file_pointer = fopen(CONFIG_PATH, "a+");
-    if(file_pointer == NULL){
-        return;
-    }
-    char* data;
-    fputs((data = create_DATA_dir()), file_pointer);
-    fclose(file_pointer);
-    free(data);
-}
-
-bool is_exist(char* filename, char* root_catalogue){
-    char filepath[BUFFER];
-    sprintf(filepath, "%s%s", root_catalogue, filename);
-    FILE* file_pointer = fopen(filepath, "r");
-    if(file_pointer == NULL)
-        return false;
-    return true;
+char* get_file_path(FILE* file_pointer){
+    return NULL;
 }
 
 FILE* openFile(char* filename, char* root_catalogue, char* mode){
@@ -88,6 +53,16 @@ bool is_directory_exist(const char* dirname, const char* root_catalogue){
     return true;
 
 }
+bool is_exist(char* filename, char* root_catalogue){ //FILE
+    char filepath[BUFFER];
+    sprintf(filepath, "%s%s", root_catalogue, filename);
+    FILE* file_pointer = fopen(filepath, "r");
+    if(file_pointer == NULL)
+        return false;
+    return true;
+}
+
+
 
 bool check_data_dir(){
     if(!is_directory_exist(DATA_DIR_NAME, MEDIA_PATH)){
@@ -96,3 +71,10 @@ bool check_data_dir(){
     }
     return true;
 }
+
+void create_data_dir(){
+    if(check_data_dir())
+        return;
+    create_dir("data", MEDIA_PATH);
+}
+
