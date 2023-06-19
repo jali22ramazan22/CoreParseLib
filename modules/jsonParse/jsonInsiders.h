@@ -52,16 +52,20 @@ void MULFILE_write_task(task* finite_task, char* filename);
 
 
 
+void MULFILE_write_object_data_path_config(void* object, FILE* file_object_pointer, void(*get_append_JSON_object_info)(void* object,
+        char* filepath, char* buffer, FILE* file_config_pointer));
+
 
 
 //TASK : CREATE A LINKING FILE WITH ALL TYPES OF OBJECT AND ITS PATHES
 // - RECURSIVE FINDER
 // - LIST DIRECTORY
-// - CREATING LINK_SAVE_FILE
-// - SAVING ALSO IN JSON FILE AND ARRAYS IN IT WITH ALL OBJECTS
+// - CREATING LINK_SAVE_FILE (DONE)
+// - SAVING ALSO IN JSON FILE AND ARRAYS IN IT WITH ALL OBJECTS (DONE)
 
 
-
+// - DELETING OBJ FILE AND FROM CONFIG
+// - CHECKING THE EXISTANCE OF FILE
 
 
 #endif //COREPARSELIB_JSONINSIDERS_H

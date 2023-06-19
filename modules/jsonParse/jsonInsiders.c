@@ -7,7 +7,6 @@ void ONEFILE_write_note(note* finite_note, char* filename) {
     FILE *file_pointer;
 
     if (!check_data_dir()){
-        sleep(1);
         create_data_dir();
         filename = UNTITLED_NOTE;
         ONEFILE_create_notion_array(filename);
@@ -45,6 +44,7 @@ void ONEFILE_write_note(note* finite_note, char* filename) {
     }
     fclose(file_pointer);
     free(buffer);
+    destruct_note_structure(finite_note);
     json_object_put(parsed_json);
 }
 
@@ -135,6 +135,49 @@ void notes_array_destructor(note** notes_arr){
 //MUL-FILE FUNCTIONALITY: if you want to create note_obj in separate files (Saving the notes always in separated files), the following
 //functions for you
 
+void MULFILE_create_object_file(char* filename){
+    if(filename == NULL)
+        return;
+    if(is_exist(filename, DATA_DIR))
+        return;
+
+    char* filepath[BUFFER];
+    sprintf(filepath, "%s%s", MEDIA_PATH, DATA_DIR_NAME);
+    create_file(filename, DATA_DIR);
+}
+
+void MULFILE_write_object_data_path_config(void* object, FILE* file_object_pointer, void(*get_append_JSON_object_info)(void* object,
+        char* filepath, char* buffer, FILE* file_config_pointer)){
+
+    FILE* file_config_pointer;
+    char* filename = "config.json";
+    file_config_pointer = openFile(filename, CONFIG_PATH, "r+");
+    if(file_config_pointer == NULL){
+        config_creation();
+        printf("Error: config does not exist.\n"
+               "Created instead.");
+        return;
+    }
+    fseek(file_config_pointer, 0, SEEK_END);
+    long file_size = ftell(file_config_pointer);
+    char* buffer = malloc(sizeof(char)*(file_size + 1));
+    if(buffer == NULL){
+        fclose(file_config_pointer);
+        return;
+    }
+    fseek(file_config_pointer, 0, SEEK_SET);
+    size_t read_size = fread(buffer, 1, file_size, file_config_pointer);
+    if (ferror(file_config_pointer)) {
+        printf("Error:");
+        fclose(file_config_pointer);
+        free(buffer);
+        return;
+    }
+    get_append_JSON_object_info(object, "get_file_path(file_object_pointer)", buffer, file_config_pointer);
+    free(buffer);
+    fclose(file_config_pointer);
+
+}
 
 
 //existing file and rewriting note logic (rewrite current note)
@@ -156,23 +199,13 @@ void MULFILE_write_note(note* finite_note, char* filename){
     struct json_object* json_file = json_object_new_object();
     struct json_object* note_object = new_JSON_note_object(finite_note);
 
+    MULFILE_write_object_data_path_config(finite_note, file_pointer, &get_append_JSON_note_info);
     json_object_object_add(json_file, "note" ,note_object);
 
     const char* file_input = json_object_to_json_string_ext(json_file, JSON_C_TO_STRING_PRETTY);
     fputs(file_input, file_pointer);
-
+    destruct_note_structure(finite_note);
     fclose(file_pointer);
-}
-
-void MULFILE_create_object_file(char* filename){
-    if(filename == NULL)
-        return;
-    if(is_exist(filename, DATA_DIR))
-        return;
-
-    char* filepath[BUFFER];
-    sprintf(filepath, "%s%s", MEDIA_PATH, DATA_DIR_NAME);
-    create_file(filename, DATA_DIR);
 }
 
 
@@ -188,15 +221,23 @@ void MULFILE_write_task(task* finite_task, char* filename){
 
     file_pointer = openFile(filename, DATA_DIR, "w+");
 
+
     struct json_object* json_file = json_object_new_object();
     struct json_object* task_object = new_JSON_task_object(finite_task);
+
+    //writing and linking new task into the config
+    MULFILE_write_object_data_path_config(finite_task, file_pointer, &get_append_JSON_task_info);
+
+
 
     json_object_object_add(json_file, "task", task_object);
 
     const char* file_input = json_object_to_json_string_ext(json_file, JSON_C_TO_STRING_PRETTY);
     fputs(file_input, file_pointer);
     json_object_put(json_file);
+    destruct_task_structure(finite_task);
     fclose(file_pointer);
+
 }
 
 

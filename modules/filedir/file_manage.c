@@ -27,10 +27,10 @@ void create_dir(char* dirname, char* root_catalogue){
     }
 
 }
-
-char* get_file_path(FILE* file_pointer){
+char* get_file_path(char* filename) {
     return NULL;
 }
+
 
 FILE* openFile(char* filename, char* root_catalogue, char* mode){
     char filepath[BUFFER];

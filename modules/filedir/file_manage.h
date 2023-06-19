@@ -19,7 +19,7 @@ void create_dir(char* dirname, char* root_catalogue);
 
 FILE* openFile(char* filename, char* root_catalogue, char* mode);
 
-char* get_file_path(FILE* file_pointer);
+char* get_file_path(char* filepath);
 
 //program functions/procedures
 void create_data_dir();

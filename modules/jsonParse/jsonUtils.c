@@ -33,7 +33,7 @@ note* create_note_structure(const char* title, const char* text, const char* cre
 
 
 task* create_task_structure(const char* text, const char* createdAt, const char* mustFinished){
-    task* task_object; char date_time_str[BUFFER];
+    task* task_object;
     task_object = malloc(sizeof(note));
     task_object->this_text = static_to_dynamic_copy(text);
     task_object->this_created_at = static_to_dynamic_copy((createdAt));
@@ -64,11 +64,16 @@ struct json_object* new_JSON_note_object(note* finite_note){
     json_object_object_add(note_object, "text", json_object_new_string(finite_note->this_text));
     json_object_object_add(note_object, "createdAt", json_object_new_string(finite_note->this_createdAt));
     json_object_object_add(note_object, "id", json_object_new_string(finite_note->id));
-    destruct_note_structure(finite_note);
     return note_object;
 }
 
-
+struct json_object* new_JSON_note_info_object(note* finite_note, char* filepath){
+    struct json_object* note_info_object = json_object_new_object();
+    json_object_object_add(note_info_object, "title", json_object_new_string(finite_note->this_title));
+    json_object_object_add(note_info_object, "id", json_object_new_string(finite_note->id));
+    json_object_object_add(note_info_object, "filepath", json_object_new_string(filepath));
+    return note_info_object;
+}
 
 struct json_object* new_JSON_task_object(task* finite_task){
     struct json_object* task_object = json_object_new_object();
@@ -76,11 +81,17 @@ struct json_object* new_JSON_task_object(task* finite_task){
     json_object_object_add(task_object, "createdAt", json_object_new_string(finite_task->this_created_at));
     json_object_object_add(task_object, "mustFinished", json_object_new_string(finite_task->this_must_finished));
     json_object_object_add(task_object, "id", json_object_new_string(finite_task->id));
-    destruct_task_structure(finite_task);
     return task_object;
 }
 
-
+struct json_object* new_JSON_task_info_object(task* finite_task, char* filepath){
+    struct json_object* task_info_object = json_object_new_object();
+    json_object_object_add(task_info_object, "text", json_object_new_string(finite_task->this_text));
+    json_object_object_add(task_info_object, "id", json_object_new_string(finite_task->id));
+    json_object_object_add(task_info_object, "mustFinished", json_object_new_string(finite_task->this_must_finished));
+    json_object_object_add(task_info_object, "filepath", json_object_new_string(filepath));
+    return task_info_object;
+}
 char* unique_object_id_generator(void){
     //srand(time(NULL)); //preferable to put into main function to get every time another id
     char buffer[BUFFER]; //ALLOWED
@@ -100,6 +111,44 @@ char* unique_object_id_generator(void){
 void config_creation(void){
     create_dir("config", MEDIA_PATH);
     create_file("config.json", CONFIG_PATH);
+    FILE* fp = openFile("config.json", CONFIG_PATH, "w+");
+    struct json_object* json_obj = json_object_new_object();
+    struct json_object* notes_array = json_object_new_array();
+    struct json_object* tasks_array = json_object_new_array();
+
+    json_object_object_add(json_obj, "notes", notes_array);
+    json_object_object_add(json_obj, "tasks", tasks_array);
+
+    const char* json_file_input = json_object_to_json_string_ext(json_obj, JSON_C_TO_STRING_PRETTY);
+    fprintf(fp, "%s", json_file_input);
+    fclose(fp);
 }
 
 
+void get_append_JSON_task_info(void* object_pointer, char* filepath, char* buffer, FILE* file_config_pointer){
+    task* finite_task = object_pointer;
+    struct json_object* parsed_json = json_tokener_parse(buffer);
+
+    struct json_object* tasks_array;
+    if(json_object_object_get_ex(parsed_json, "tasks", &tasks_array)){
+        struct json_object* task_info_object = new_JSON_task_info_object(finite_task, filepath);
+        json_object_array_put_idx(tasks_array, json_object_array_length(tasks_array), task_info_object);
+        fseek(file_config_pointer, 0, SEEK_SET);
+        fprintf(file_config_pointer, "%s", json_object_to_json_string_ext(parsed_json, JSON_C_TO_STRING_PRETTY));
+    }
+    json_object_put(parsed_json);
+}
+
+void get_append_JSON_note_info(void* object_pointer, char* filepath, char* buffer, FILE* file_config_pointer){
+    note* finite_note = object_pointer;
+    struct json_object* parsed_json = json_tokener_parse(buffer);
+
+    struct json_object* notes_array;
+    if(json_object_object_get_ex(parsed_json, "notes", &notes_array)){
+        struct json_object* note_info_object = new_JSON_note_info_object(finite_note, filepath);
+        json_object_array_put_idx(notes_array, json_object_array_length(notes_array), note_info_object);
+        fseek(file_config_pointer, 0, SEEK_SET);
+        fprintf(file_config_pointer, "%s", json_object_to_json_string_ext(parsed_json, JSON_C_TO_STRING_PRETTY));
+    }
+    json_object_put(parsed_json);
+}

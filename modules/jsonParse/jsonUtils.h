@@ -40,7 +40,7 @@ void destruct_task_structure(task* task_object);
 
 struct json_object* new_JSON_task_object(task* finite_task);
 
-
+struct json_object* new_JSON_task_info_object(task* finite_task, char* filepath);
 
 //returns unsigned int of json array size
 size_t getArraySize(struct json_object* json_array);
@@ -59,7 +59,7 @@ char* date_to_str(date creation_data);
 //transform "note" structure to json_note structure
 struct json_object* new_JSON_note_object(note* finite_note);
 
-
+struct json_object* new_JSON_note_info_object(note* finite_note, char* filepath);
 //generator for id of id, assigns every object pseudo-randomly generated key(id);
 //has format  int_arr + char
 // Example: 1210387F
@@ -68,4 +68,9 @@ char* unique_object_id_generator(void);
 
 void config_creation(void);
 
+
+void get_append_JSON_task_info(void* object_pointer, char* filepath, char* buffer, FILE* file_config_pointer);
+
+
+void get_append_JSON_note_info(void* object_pointer, char* filepath, char* buffer, FILE* file_config_pointer);
 #endif //COREPARSELIB_JSONUTILS_H
