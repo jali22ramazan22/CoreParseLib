@@ -1,80 +1,40 @@
 #include "file_manage.h"
+char* MEDIA_PATH = NULL;
 
-void create_file(char* filename, char* root_catalogue){
-    char filepath[BUFFER];
-    sprintf(filepath, "%s%s", root_catalogue, filename);
-    FILE* file_pointer = fopen(filepath, "w");
-    if(file_pointer != NULL){
-        fclose(file_pointer);
 
-        return;
-    }
-    fclose(file_pointer);
-    printf("File created successfully\n");
+
+FILE* openFile(char* filename, char* originDir, char* mode){
+    char* path = get_obj_path(filename, originDir);
+    FILE* fp = fopen(path, mode);
+    free(path);
+    return fp;
 }
 
-void create_dir(char* dirname, char* root_catalogue){
-    char dir_path[BUFFER];
-    sprintf(dir_path, "%s%s", root_catalogue, dirname);
-
-    int status = mkdir(dir_path, 0700);
-
-    if (status == 0){
-        printf("Directory created successfully\n");
+char* get_obj_path(char* filename, char* dirname) {
+    DIR* dir = opendir(dirname);
+    if (dir == NULL) {
+        return NULL;
     }
-    else{
-        printf("Failed to create directory\n");
+    struct dirent* filedir_obj;
+    while ((filedir_obj = readdir(dir)) != NULL) {
+        if (!str_cmp(filedir_obj->d_name, "..") && !str_cmp(filedir_obj->d_name, ".")) {
+            char path[BUFFER];
+            if (filedir_obj->d_type == DT_DIR) {
+                sprintf(path, "%s/%s", dirname, filedir_obj->d_name);
+                char* file_path = get_obj_path(filename, path);
+                if (file_path != NULL) {
+                    return file_path;
+                }
+            }
+            if (str_cmp(filename, filedir_obj->d_name)){
+                char* file_path = static_to_dynamic_copy(path);
+                sprintf(file_path, "%s/%s", dirname, filedir_obj->d_name);
+                return file_path;
+            }
+        }
     }
-
-}
-char* get_file_path(char* filename) {
+    closedir(dir);
     return NULL;
 }
 
-
-FILE* openFile(char* filename, char* root_catalogue, char* mode){
-    char filepath[BUFFER];
-    sprintf(filepath, "%s%s", root_catalogue, filename);
-    FILE* file_pointer = fopen(filepath, mode);
-    if(file_pointer == NULL)
-        return NULL;
-    return file_pointer;
-}
-
-
-bool is_directory_exist(const char* dirname, const char* root_catalogue){
-    char dir_path[BUFFER];
-    sprintf(dir_path, "%s%s", root_catalogue, dirname);
-    DIR* dir = opendir(dir_path);
-    if (!dir){
-        return false;
-    }
-    closedir(dir);
-    return true;
-
-}
-bool is_exist(char* filename, char* root_catalogue){ //FILE
-    char filepath[BUFFER];
-    sprintf(filepath, "%s%s", root_catalogue, filename);
-    FILE* file_pointer = fopen(filepath, "r");
-    if(file_pointer == NULL)
-        return false;
-    return true;
-}
-
-
-
-bool check_data_dir(){
-    if(!is_directory_exist(DATA_DIR_NAME, MEDIA_PATH)){
-        printf("Directory %s does not exist\n", DATA_DIR);
-        return false;
-    }
-    return true;
-}
-
-void create_data_dir(){
-    if(check_data_dir())
-        return;
-    create_dir("data", MEDIA_PATH);
-}
 
